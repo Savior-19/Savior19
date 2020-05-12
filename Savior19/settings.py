@@ -74,10 +74,20 @@ WSGI_APPLICATION = 'Savior19.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd5lpa4b46iu9rt',
+        'USER': 'xutqhpmesdoyhk',
+        'PASSWORD': '35174c50d52feea15363f1c57a027f0dc8c6f25051c3bff05fc938f782953c5f',
+        'HOST': 'ec2-34-230-149-169.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
