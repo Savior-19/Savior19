@@ -1,0 +1,11 @@
+.DS_Store
+*/.DS_Store
+
+.vscode
+*/__pycache__
+
+!*/migrations/
+*/migrations/*
+!*/migrations/__init__.py
+
+db.sqlite3
