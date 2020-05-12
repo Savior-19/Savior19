@@ -1,1 +1,1 @@
-web: gunicorn Savior19.Savior19.wsgi:application --log-file -
+web: gunicorn Savior19.wsgi:application --log-file -
