@@ -25,7 +25,7 @@ SECRET_KEY = 'mi)vammyq)bct_3ga2#pqtaa7rx($=6$=5p7yd1)##mg26#rjs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['savior19-staging.herokuapp.com']
+ALLOWED_HOSTS = ['savior19-staging.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
