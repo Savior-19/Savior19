@@ -19,19 +19,31 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
+
+# Deployment options :
+# Change this to True to make all the necessary changes to all the settings and to deploy.
+DEPLOY = True
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'mi)vammyq)bct_3ga2#pqtaa7rx($=6$=5p7yd1)##mg26#rjs'
+"""SECRET_KEY = 'mi)vammyq)bct_3ga2#pqtaa7rx($=6$=5p7yd1)##mg26#rjs'"""
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if DEPLOY == True :
+    DEBUG = False
+else :
+    DEBUG = True
 
-ALLOWED_HOSTS = ['savior19-staging.herokuapp.com', '127.0.0.1']
+
+if DEPLOY == True :
+    ALLOWED_HOSTS = ['savior19-staging.herokuapp.com']
+else :
+    ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,10 +51,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+if DEPLOY == True :
+    INSTALLED_APPS.insert(0, 'whitenoise.runserver_nostatic')
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -50,6 +64,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+if DEPLOY == True :
+    # This should be just below the 'django.middleware.security.SecurityMiddleware'.
+    MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 
 ROOT_URLCONF = 'Savior19.urls'
 
@@ -75,22 +92,27 @@ WSGI_APPLICATION = 'Savior19.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-"""DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+if DEPLOY == True :
+    # Use the postgre database on heroku.
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'd5lpa4b46iu9rt',
+            'USER': 'xutqhpmesdoyhk',
+            'PASSWORD': '35174c50d52feea15363f1c57a027f0dc8c6f25051c3bff05fc938f782953c5f',
+            'HOST': 'ec2-34-230-149-169.compute-1.amazonaws.com',
+            'PORT': '5432',
+        }
     }
-}"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd5lpa4b46iu9rt',
-        'USER': 'xutqhpmesdoyhk',
-        'PASSWORD': '35174c50d52feea15363f1c57a027f0dc8c6f25051c3bff05fc938f782953c5f',
-        'HOST': 'ec2-34-230-149-169.compute-1.amazonaws.com',
-        'PORT': '5432',
+else :
+    # Use the local sqlite database.
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
 
 
 # Password validation
@@ -117,7 +139,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -131,4 +153,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+if DEPLOY == True :
+    # To use the whitenoise to handle the static files (as heroku dosen't do this on its own).
+    STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
