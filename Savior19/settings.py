@@ -25,8 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEPLOY = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
-"""SECRET_KEY = 'mi)vammyq)bct_3ga2#pqtaa7rx($=6$=5p7yd1)##mg26#rjs'"""
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'mi)vammyq)bct_3ga2#pqtaa7rx($=6$=5p7yd1)##mg26#rjs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if DEPLOY == True :
