@@ -29,7 +29,7 @@ SECRET_KEY = 'mi)vammyq)bct_3ga2#pqtaa7rx($=6$=5p7yd1)##mg26#rjs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if DEPLOY == True :
-    DEBUG = True#
+    DEBUG = False
 else :
     DEBUG = True
 
