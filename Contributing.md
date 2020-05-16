@@ -24,6 +24,14 @@ $ python manage.py runserver
 
 ```
 
+## Instructions
+
+
+* All the html files for the corresponding applications should be kept under its respective folder under the 'templates' folder.
+* All the css and styling for the corresponding applications should be maintained under its respective folder under the 'static/css' folder.
+* All the external javascript files for the corresponding applications should be maintained under its respective folder under the 'static/js' folder.
+* The home page for the project will be maintained under the 'Savior19' folder which is the main project folder, all other pages will be maintained under their respective applications.
+
 ## Additional Details
 
 <ul>
@@ -44,6 +52,6 @@ $ heroku apps
 
 # To Run any Django command :
 $ heroku run <Django Command> -a <Heroku application name>
-"""Eg:"""  $ heroku run python manage.py createsuperuser -a savior19-staging
+Eg:  $ heroku run python manage.py createsuperuser -a savior19-staging
 
 ```
