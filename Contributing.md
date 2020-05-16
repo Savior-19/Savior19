@@ -2,9 +2,60 @@
 
 ## Setting up
 
+* Create a fork of the project by clicking the fork button, and then go to your fork.
+
+```bash
+
+# Clone it (in an appropriate location in your computer).
+$ git clone [path_to_your_fork]
+
+# Change directory
+$ cd Savior19
+
+# Add the upstream repo
+$ git remote add upstream https://github.com/Savior-19/Savior19.git
+
+# Check if it has been added properly
+git remote -v
+
 ```
 
+* The next few commands can be used to update your local copy and your fork whenever there is an update in the upstream repository.
 
+```bash
+
+# Get the latest upstream changes
+$ git fetch upstream
+
+# Switch to the Master branch
+$ git checkout master
+
+# Merge the upstream/GraphQL branch with your local GraphQL branch
+$ git rebase upstream/master master
+
+# Push the upstream changes to your fork
+$ git push origin master
+
+```
+
+* Setup and activate a python virtual environment (perferrably in a folder outside your project and this is not a mandatory step).
+
+```bash
+
+# Creating a virtual environment.
+$ virtualenv -p python3 venv
+
+# Activating the virtual environment (Has to be run everytime we execute the project).
+$ source venv/bin/activate
+
+```
+
+* Install the required packages and dependencies.
+
+```bash
+
+# If you do not have pip installed, then first install it and proceed.
+$ pip install -r requirements-dev.txt
 
 ```
 
@@ -19,10 +70,17 @@ $ python manage.py makemigrations
 # To migrate to the database :
 $ python manage.py migrate
 
+# To create a super user (to be run only during the creation of the database)
+$ python manage.py createsuperuser
+
 # To run the application :
 $ python manage.py runserver
 
 ```
+
+## Submitting Changes
+
+* After pushing your changes to the orgin of the forked repository, create a merge request to the main repository's master branch.
 
 ## Instructions
 
