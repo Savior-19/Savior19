@@ -59,7 +59,6 @@ $ pip install -r requirements-dev.txt
 
 ```
 
-
 ## Running the Django Project
 
 ```bash

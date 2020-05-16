@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+# ---------------------------------------------------------- Customer Pages -----------------------------------------------------------
+
+"""def FillPassApplication(request) :
+    if request.method == 'POST' :
+        """

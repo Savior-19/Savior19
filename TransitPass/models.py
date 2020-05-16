@@ -69,7 +69,6 @@ def aadhaar_validator(aadhaarNum) :
 
 
 class TransitPassApplication(models.Model) :
-    application_id = models.IntegerField(default=0, primary_key=True)
     full_name = models.CharField(max_length=200, blank=False, null=False)
     email = models.EmailField(max_length=100, blank=False, null=False)
     age = models.IntegerField(default=0)
