@@ -32,6 +32,7 @@ if DEPLOY == True :
 else :
     DEBUG = True
 
+# The wep address should be added here.
 ALLOWED_HOSTS = ['savior19-staging.herokuapp.com', '127.0.0.1', 'localhost']
 
 # Application definition
@@ -44,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'TransitPass.apps.TransitpassConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +61,14 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Savior19.urls'
+
+AUTH_USER_MODEL = 'users.CustomUser'
+
+LOGIN_URL = '/login'
+
+LOGIN_REDIRECT_URL = '..'
+
+LOGOUT_REDIRECT_URL = '..'
 
 TEMPLATES = [
     {
@@ -140,9 +151,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # To use the whitenoise to handle the static files (as heroku dosen't do this on its own).
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+# Media files 
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'

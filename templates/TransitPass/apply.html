@@ -1,0 +1,81 @@
+<html>
+	<body>
+		<h1>Application form</h1>
+		<form method="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			<table>
+				<tr>
+					<th>Full name</th>
+					<td><input type="text" name="full_name" required></td>
+				</tr>
+				<tr>
+					<th>Mobile</th>
+					<td><input type="text" name="mobile" required></td>
+				</tr>
+				<tr>
+					<th>Email Address</th>
+					<td><input type="email" name="email" required></td>
+				</tr>
+				<tr>
+					<th>Age</th>
+					<td><input type="number" name="age" required></td>
+				</tr>
+				<tr>
+					<th>Applicant Type</th>
+					<td>
+						<select name="applicant_type">
+							<option value="Pvt">Private Corporation</option>
+							<option value="Govt">Government Official/ Organization</option>
+							<option value="Pub" selected>Public Individual</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>Aadhaar Number</th>
+					<td><input type="number" name="aadhaar_number" required></td>
+				</tr>
+				<tr>
+					<th>Permanent Address</th>
+					<td><textarea name="address" cols="30" rows="10" required></textarea></td>
+				</tr>
+				<tr>
+					<th>State</th>
+					<td>
+						<select name="state" required>
+							<option value="select" disabled selected> Select</option>
+							<option value="Tamil Nadu">Tamil Nadu</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>District</th>
+					<td>
+						<select name="district"  required>
+							<option value="select" disabled selected> Select</option>
+							<option value="Madurai">Madurai</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>Purpose</th>
+					<td><textarea name="purpose" cols="30" rows="10" required></textarea></td>
+				</tr>
+				<tr>
+					<th>Source</th>
+					<td><input type="text" required name="source"></td>
+				</tr>
+				<tr>
+					<th>Destination</th>
+					<td><input type="text" required name="destination"></td>
+				</tr>
+				<tr>
+					<th>Supporting Documents</th>
+					<td><input type="file" name="document"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button type="submit">Submit</button></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
