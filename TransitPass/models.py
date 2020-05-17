@@ -93,4 +93,8 @@ class TransitPassApplication(models.Model) :
     def __str__(self) :
         name_string = self.full_name + " - " + self.district.name + " - " + self.state.name
         return name_string
+    
+    def delete(self, *args, **kwargs) :
+        self.document.delete()
+        super().delete(*args, **kwargs)
 
