@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CustomUser#, DistrictOfficialProfile, StateOfficialProfile
+"""from .models import CustomUser#, DistrictOfficialProfile, StateOfficialProfile
 from django.contrib.auth.admin import UserAdmin
 from .forms import CustomUserCreationForm, CustomUserChangeForm 
 
@@ -14,5 +14,5 @@ class CustomUserAdmin(UserAdmin):
 
 
 admin.site.register(CustomUser, CustomUserAdmin)
-"""admin.site.register(DistrictOfficialProfile)
+admin.site.register(DistrictOfficialProfile)
 admin.site.register(StateOfficialProfile)"""
