@@ -81,7 +81,7 @@ class TransitPassApplication(models.Model) :
     purpose = models.TextField(max_length=5000, verbose_name="Purpose for travel")
     source = models.CharField(max_length=100, verbose_name="Source Area")
     destination = models.CharField(max_length=100, verbose_name="Destination Area")
-    doj = models.DateField(verbose_name="Date of Journey", auto_now=True)
+    #doj = models.DateField(verbose_name="Date of Journey", auto_now=True)
     document = models.FileField(verbose_name="Suppporting Documents", blank=True)
     STATUS_CHOICES = [('A', 'APPLIED'), ('V', 'VERIFIED'), ('AC', 'ACCEPTED'), ('R', 'REJECTED')]
     status = models.CharField(max_length=5, verbose_name='Application Status', choices=STATUS_CHOICES, default='A')
