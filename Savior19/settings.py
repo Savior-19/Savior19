@@ -33,7 +33,7 @@ else :
     DEBUG = True
 
 # The wep address should be added here.
-ALLOWED_HOSTS = ['savior19-staging.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['savior19.herokuapp.com', '127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -98,10 +98,10 @@ if DEPLOY == True :
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'd6oiivq4m13o7d',
-            'USER': 'rhoyxyozprbocv',
-            'PASSWORD': '97bcdfc15b39b7683fb60eb0f76a51e833690d4ed0b34f3c9dc28f61163e80bf',
-            'HOST': 'ec2-52-202-146-43.compute-1.amazonaws.com',
+            'NAME': 'd7gfcaac9dvl0o',
+            'USER': 'zvsfthazachgxz',
+            'PASSWORD': '71c6f03832b27e64944471a1cfc255f3b37c6053452f0b7143cd4a4bf693d2cf',
+            'HOST': 'ec2-54-81-37-115.compute-1.amazonaws.com',
             'PORT': '5432',
         }
     }
