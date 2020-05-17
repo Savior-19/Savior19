@@ -16,7 +16,7 @@ class CustomUser(AbstractUser) :
         return (self.username)
 
 
-"""class DistrictOfficialProfile(models.Model) :
+class DistrictOfficialProfile(models.Model) :
     account = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name="district_official_profile", limit_choices_to={'role' : 'DisOff'})
     district = models.ForeignKey(District, on_delete=models.CASCADE, related_name='district_official_profile')
     state = models.ForeignKey(State, on_delete=models.CASCADE)
@@ -32,4 +32,4 @@ class StateOfficialProfile(models.Model) :
 
     def __str__(self):
         namestring = self.account.first_name + ' ' + self.account.last_name + ' - ' + self.state.name
-        return namestring"""
+        return namestring
