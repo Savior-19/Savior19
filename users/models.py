@@ -3,14 +3,14 @@ from django.contrib.auth.models import AbstractUser, UserManager
 from TransitPass.models import State, District
 
 
-class CustomUserManager(UserManager) :
-    pass
+"""class CustomUserManager(UserManager) :
+    pass"""
 
 
 class CustomUser(AbstractUser) :
     role_choices = [('DisOff', 'DistrictOfficial'), ('StOff', 'StateOfficial'), ('A', 'Administrator')]
     role = models.CharField(max_length=10, choices=role_choices, default='DisCol')
-    objects = CustomUserManager()
+    #objects = CustomUserManager()
 
     def __str__(self):
         return (self.username)
