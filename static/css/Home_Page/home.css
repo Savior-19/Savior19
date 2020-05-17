@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: 2.2fr 1fr;
     grid-template-rows: 3fr 5fr;
-    background-image: url(../images/back.jpg);
+    background-image: url(../../img/back.jpg);
 }
 .logo{
     grid-column-start:1 ;
