@@ -68,7 +68,7 @@ def aadhaar_validator(aadhaarNum) :
         raise ValidationError(f"{aadhaarNum} is not a valid Aadhaar Number.")
 
 
-"""class TransitPassApplication(models.Model) :
+class TransitPassApplication(models.Model) :
     full_name = models.CharField(max_length=200, blank=False, null=False)
     email = models.EmailField(max_length=100, blank=False, null=False)
     age = models.IntegerField(default=0)
@@ -92,5 +92,5 @@ def aadhaar_validator(aadhaarNum) :
     
     def __str__(self) :
         name_string = self.full_name + " - " + self.district.name + " - " + self.state.name
-        return name_string"""
+        return name_string
 
