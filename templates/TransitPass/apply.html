@@ -1,81 +1,100 @@
 <html>
+	<head>
+		<link rel="stylesheet" href="{%  static 'css/Home_Page/apply.css' %}">
+	</head>
 	<body>
 		<h1>Application form</h1>
 		<form method="post" enctype="multipart/form-data">
 			{% csrf_token %}
-			<table>
-				<tr>
-					<th>Full name</th>
-					<td><input type="text" name="full_name" required></td>
-				</tr>
-				<tr>
-					<th>Mobile</th>
-					<td><input type="text" name="mobile" required></td>
-				</tr>
-				<tr>
-					<th>Email Address</th>
-					<td><input type="email" name="email" required></td>
-				</tr>
-				<tr>
-					<th>Age</th>
-					<td><input type="number" name="age" required></td>
-				</tr>
-				<tr>
-					<th>Applicant Type</th>
-					<td>
-						<select name="applicant_type">
-							<option value="Pvt">Private Corporation</option>
-							<option value="Govt">Government Official/ Organization</option>
-							<option value="Pub" selected>Public Individual</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th>Aadhaar Number</th>
-					<td><input type="number" name="aadhaar_number" required></td>
-				</tr>
-				<tr>
-					<th>Permanent Address</th>
-					<td><textarea name="address" cols="30" rows="10" required></textarea></td>
-				</tr>
-				<tr>
-					<th>State</th>
-					<td>
-						<select name="state" required>
-							<option value="select" disabled selected> Select</option>
-							<option value="Tamil Nadu">Tamil Nadu</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th>District</th>
-					<td>
-						<select name="district"  required>
-							<option value="select" disabled selected> Select</option>
-							<option value="Madurai">Madurai</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<th>Purpose</th>
-					<td><textarea name="purpose" cols="30" rows="10" required></textarea></td>
-				</tr>
-				<tr>
-					<th>Source</th>
-					<td><input type="text" required name="source"></td>
-				</tr>
-				<tr>
-					<th>Destination</th>
-					<td><input type="text" required name="destination"></td>
-				</tr>
-				<tr>
-					<th>Supporting Documents</th>
-					<td><input type="file" name="document"></td>
-				</tr>
-				<tr>
-					<td colspan="2"><button type="submit">Submit</button></td>
-				</tr>
-			</table>
+			<div class="fom">
+				<h4>Full Name:-</h4>
+				<input type="text" name="full_name" required placeholder="Full Name" id="name">
+				<br>
+				<br>
+				<h4>Mobile Number:-</h4>
+				<input type="text" name="mobile" required placeholder="Mobile Number">
+				<br>
+				<br>
+				<h4>Email:-</h4>
+			
+				<input type="email" name="email" required placeholder="Email ">
+				<br>
+				<br>
+				<h4>Age:-</h4>
+				
+				<input type="number" name="age" required placeholder="Age">
+				<br>
+				<br>
+	</div>
+				<h4>Gender:-</h4>
+				<input type="radio" id="male" name="gender" value="male">
+	  <label for="male">Male</label>
+	  <br>
+	  <input type="radio" id="female" name="gender" value="female">
+	  <label for="female">Female</label>
+	  <br>
+	  <input type="radio" id="other" name="gender" value="other">
+	  <label for="other">Other</label>
+			<br>
+			<br>
+			<div class="fom">
+				<h4>Applicant Type:-</h4>
+				
+				<select name="applicant_type" required>
+					<option value="select" disabled selected> Select</option>
+					<option value="Pvt">Private Corporation</option>
+					<option value="Govt">Government Official/ Organization</option>
+					<option value="Pub">Public Individual</option>
+				</select>
+				<br>
+				<br>
+				<h4>Aadhar Number:-</h4>
+				
+				<input type="number" name="aadhaar_number" required placeholder="Aadhar Number">
+				<br>
+				<br>
+				<h4>Permanent Address:-</h4>
+				
+				<textarea name="address" cols="30" rows="10" required placeholder="Address"></textarea>
+				<br><br>
+				<h4>State:-</h4>
+				
+				<select name="state" required>
+					<option value="select" disabled selected> Select</option>
+					<option value="Tamil Nadu">Tamil Nadu</option>
+				</select>
+				<br><br>
+				<h4>District:-</h4>
+				
+				<select name="district"  required>
+					<option value="select" disabled selected> Select</option>
+					<option value="Madurai">Madurai</option>
+				</select>
+				<h4>Purpose:-</h4>
+				
+				<textarea name="purpose" cols="30" rows="10" required placeholder="Purpose of Visit"></textarea>
+				<br>
+				<br>
+				<h4>Source</h4>
+				
+				<input type="text" required name="source" placeholder="Source">
+				<br>
+				<br>
+	
+				<h4>Destination:-</h4>
+				
+				<input type="text" required name="destination" placeholder="destination">
+				<br>
+				<br>
+				<h4>Documents</h4>
+			
+				<input type="file" name="document" placeholder="Document">
+				<br>
+				<br>
+				<br>
+	
+				<button>Submit</button>
+			</div>
 		</form>
 	</body>
 </html>
