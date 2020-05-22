@@ -81,13 +81,13 @@ class TransitPassApplication(models.Model) :
     purpose = models.TextField(max_length=5000, verbose_name="Purpose for travel")
     source = models.CharField(max_length=100, verbose_name="Source Area")
     destination = models.CharField(max_length=100, verbose_name="Destination Area")
-    #doj = models.DateField(verbose_name="Date of Journey", auto_now=True)
+    doj = models.DateField(verbose_name="Date of Journey", auto_now=True)
     document = models.FileField(verbose_name="Suppporting Documents", blank=True)
     STATUS_CHOICES = [('A', 'APPLIED'), ('CL', 'CLARIFICATIONS REQUIRED'), ('AC', 'ACCEPTED'), ('R', 'REJECTED')]
     status = models.CharField(max_length=5, verbose_name='Application Status', choices=STATUS_CHOICES, default='A')
-    #VEHICLE_CHOICES = [('T', 'TWO WHEELER'), ('F', 'FOUR WHEELER')]
-    #vehicle_type = models.CharField(max_length=5, verbose_name='Vehicle Type', choices=VEHICLE_CHOICES, default='T')
-    #vehicle_no = models.CharField(max_length=15, verbose_name='Vehicle Registration Number')
+    VEHICLE_CHOICES = [('T', 'TWO WHEELER'), ('F', 'FOUR WHEELER')]
+    vehicle_type = models.CharField(max_length=5, verbose_name='Vehicle Type', choices=VEHICLE_CHOICES, default='T')
+    vehicle_no = models.CharField(max_length=15, verbose_name='Vehicle Registration Number', null=True)
 
     class Meta() :
         verbose_name = "Transit Pass Application"
