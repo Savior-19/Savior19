@@ -1,6 +1,7 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="{%  static 'css/Home_Page/apply.css' %}">
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/Home_Page/apply.css' %}">
 	</head>
 	<body>
 		<h1>Application form</h1>
@@ -25,21 +26,21 @@
 				<input type="number" name="age" required placeholder="Age">
 				<br>
 				<br>
-	</div>
-				<h4>Gender:-</h4>
-				<input type="radio" id="male" name="gender" value="male">
-	  <label for="male">Male</label>
-	  <br>
-	  <input type="radio" id="female" name="gender" value="female">
-	  <label for="female">Female</label>
-	  <br>
-	  <input type="radio" id="other" name="gender" value="other">
-	  <label for="other">Other</label>
+			</div>
+			<h4>Gender:-</h4>
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label>
+			<br>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label>
+			<br>
+			<input type="radio" id="other" name="gender" value="other">
+			<label for="other">Other</label>
 			<br>
 			<br>
 			<div class="fom">
 				<h4>Applicant Type:-</h4>
-				
+
 				<select name="applicant_type" required>
 					<option value="select" disabled selected> Select</option>
 					<option value="Pvt">Private Corporation</option>
@@ -49,12 +50,12 @@
 				<br>
 				<br>
 				<h4>Aadhar Number:-</h4>
-				
+
 				<input type="number" name="aadhaar_number" required placeholder="Aadhar Number">
 				<br>
 				<br>
 				<h4>Permanent Address:-</h4>
-				
+
 				<textarea name="address" cols="30" rows="10" required placeholder="Address"></textarea>
 				<br><br>
 				<h4>State:-</h4>
@@ -92,8 +93,21 @@
 				<br>
 				<br>
 				<br>
+				<h4>Vehicle Type</h4>
+
+				<select required name="vehicle_type">
+					<option value="T">Two Wheeler</option>
+					<option value="F">Four Wheeler</option>
+				</select>
+				<br>
+				<br>
+				<h4>Vehicle Registration Number</h4>
+
+				<input required type="text" name="vehicle_no">
+				<br>
+				<br>
 	
-				<button>Submit</button>
+				<button type="submit">Submit</button>
 			</div>
 		</form>
 	</body>
