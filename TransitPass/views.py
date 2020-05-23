@@ -96,7 +96,15 @@ def DisplayIndividualApplication(request, appln_id) :
 				return redirect(DisplayApplicationList)
 			elif application_object.status == 'CL' :
 				# If the application needs more clarifications
-				return redirect(SendClarificationMail, appln_id)
+				comments = request.POST['comments']
+
+				return redirect(DisplayApplicationList)
+			else :
+				# If the application has been rejected
+				# Send a mail stating the rejection issue
+				comments = request.POST['comments']
+
+				return redirect(DisplayApplicationList)
 		else :
 			raise PermissionDenied()
 	else :
@@ -114,7 +122,7 @@ def DisplayIndividualApplication(request, appln_id) :
 			raise PermissionDenied()
 
 
-@login_required
+"""@login_required
 def SendClarificationMail(request, appln_id) :
 	# Change the status of expired pass.
 	expired_passes = TransitPass.objects.filter(expiry_date__lt=datetime.datetime.today())
@@ -137,29 +145,50 @@ def SendClarificationMail(request, appln_id) :
 				message = 'Your aadhaar card is invalid'
 			elif choice == 'B' :
 				message = 'The Identification document submitted is insufficient/invalid'
-			
+			message += request.POST['additional-message']
+
 			return redirect(DisplayApplicationList)
 		else :
 			return render(request, 'TransitPass/sendClarification.html')
 	else :
-		raise PermissionDenied()
+		raise PermissionDenied()"""
 
 
-def CheckApplicationStatus(request, appln_id) :
+def CheckApplicationStatus(request) :
 	# Change the status of expired pass.
 	expired_passes = TransitPass.objects.filter(expiry_date__lt=datetime.datetime.today())
 	for expired_pass in expired_passes :
 		expired_pass.status = 'E'
 	
-	application_object = TransitPassApplication.objects.get(id=appln_id)
-	return render(request, 'TransitPass/checkApplicationStatus.html', {'application' : application_object})
+	if request.method == 'POST' :
+		appln_id = request.POST['appln_id']
+		mobile_number = request.POST['mobile_number']
+		try :
+			application_object = TransitPassApplication.objects.get(id=appln_id, mobile=mobile_number)
+		except :
+			return render(request, 'TransitPass/checkApplicationStatus.html', {'output' : True, 'error' : True})
+		else :
+			return render(request, 'TransitPass/checkApplicationStatus.html', {'output' : True, 'error' : False, 'application' : application_object})
+	else :
+		return render(request, 'TransitPass/checkApplicationStatus.html', {'output' : False})
 
 
-def checkPassValidity(request, pass_id) :
+def CheckPassValidity(request) :
 	# Change the status of expired pass.
 	expired_passes = TransitPass.objects.filter(expiry_date__lt=datetime.datetime.today())
 	for expired_pass in expired_passes :
 		expired_pass.status = 'E'
 	
-	pass_object = TransitPass.objects.get(id=pass_id)
-	return render(request, 'TransitPass/checkPassValidity.html', {'transit_pass' : pass_object})
+	if request.method == 'POST' :
+		pass_id = request.POST['pass_id']
+		mobile_number = request.POST['mobile_number']
+		try :
+			pass_object = TransitPass.objects.get(id=pass_id)
+			if pass_object.application.mobile == int(mobile_number) :
+				return render(request, 'TransitPass/checkPassValidity.html', {'output' : True, 'error' : False, 'transit_pass' : pass_object})
+			else :
+				return render(request, 'TransitPass/checkPassValidity.html', {'output' : True, 'error' : True})
+		except :
+			return render(request, 'TransitPass/checkPassValidity.html', {'output' : True, 'error' : True})
+	else :
+		return render(request, 'TransitPass/checkPassValidity.html', {'output' : False})

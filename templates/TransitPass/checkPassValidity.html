@@ -1,0 +1,47 @@
+{% extends 'TransitPass/base.html' %}
+{% load static %}
+
+{% block header %}
+    <link rel="stylesheet" href="{% static 'css/TransitPass/checkStatus.css' %}" type="text/css">
+{% endblock %}
+
+{% block body %}
+    <h1>Check Application Status</h1>
+    <form method="post">
+        {% csrf_token %}
+        Enter the Transit Pass Identification Number : 
+        <input type="text" name="pass_id">
+        <br>
+        Enter the mobile number :
+        <input type="text" name="mobile_number">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if output %}
+        {% if error %}
+            The Transit Pass identification number and the mobile number entered do not match our records.
+        {% else %}
+            <table>
+                <tr>
+                    <th>Identification Number</th>
+                    <th>{{ transit_pass.id }}</th>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>
+                        {% if transit_pass.status == 'A' %}
+                            Active
+                        {% else %}
+                            Expired
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr>
+                    <th>Expires on : </th>
+                    <th>{{ transit_pass.expiry_date }}</th>
+                </tr>
+            </table>
+        {% endif %}
+    {% endif %}
+{% endblock %}

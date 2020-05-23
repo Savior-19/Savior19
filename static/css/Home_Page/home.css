@@ -1,9 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
 
 body {
-    
     margin: 0%;
-
 }
 
 .front{
@@ -16,27 +14,26 @@ body {
     grid-template-rows: 3fr 5fr;
     background-image: url(../../img/back.jpg);
 }
+
 .logo{
     grid-column-start:1 ;
     grid-column-end: 2;
     grid-row-start:1 ;
     grid-row-end: 2;
-    
 }
+
 .but{
     grid-column-start:2 ;
     grid-column-end: 3;
     grid-row-start:1 ;
     grid-row-end: 2;
-    
 }
+
 .content{
     grid-column-start:1 ;
     grid-column-end: 3;
     grid-row-start:2 ;
     grid-row-end: 3;
-    
-
 }
 
 button{
@@ -49,12 +46,13 @@ button{
     margin-top: 80px;
     background-color: rgb(255, 38, 0);
     display: inline;
-
 }
+
 .one{
     margin-top: 20px;
     margin-right: 80px;
 }
+
 .two{
     margin-top: 20px;
     margin-right: 0px;
@@ -67,14 +65,15 @@ h1{
     font-family: cursive;
     font-size: 50px;
 }
+
 img{
     margin-left: 30px;
     margin-top: 40px;
     height: 120px;
     width: 120px;
     border-radius: 80px;
-    
 }
+
 .bot{
    
     padding: 5px;
@@ -91,6 +90,7 @@ img{
     text-align: center;
     color: rgb(238, 238, 238);
 }
+
 .bot:hover{
     height: 400px;
     background-color: teal;
@@ -98,6 +98,11 @@ img{
     margin-top: 0%;
 
 }
+
 .about{
     background-color: thistle;
+}
+
+a {
+    text-decoration: none;
 }

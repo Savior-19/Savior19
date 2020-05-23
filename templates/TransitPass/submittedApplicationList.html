@@ -1,0 +1,31 @@
+{% extends 'TransitPass/base.html' %}
+{% load static %}
+
+{% block header %}
+    <link rel="stylesheet" href="{% static 'css/TransitPass/applicationList.css' %}" type="text/css">
+{% endblock %}
+
+{% block body %}
+    <h1 >Submitted Applications</h1>
+    {% if num_applications == 0 %}
+        <h1>There are no applications left for review.</h1>
+    {% else %}
+        <table>
+            <tr>
+                <th>Sno</th>
+                <th>Application</th>
+                <th>Journey Date</th>
+            </tr>
+            {% for application in applications %}
+                <tr>
+                    <th>{{ forloop.counter }}</th>
+                    <td>{{ application.full_name }}</td>
+                    <td>{{ application.doj }}</td>
+                    <td>
+                        <button><a href="/transit-pass/view-application/{{ application.id }}">Review</a></button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+{% endblock %}
