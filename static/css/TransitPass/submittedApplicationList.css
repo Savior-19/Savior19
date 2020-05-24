@@ -1,40 +1,36 @@
 h1,td,tr{
     font-family: Arial, Helvetica, sans-serif; 
     text-align: center;
-    color: rgb(250, 184, 184);
+    color: #25d5da;
 }
 h1{
     color: tomato;
+    font-size: 45px;
     font-weight:900;
+    margin-bottom: 50px;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+#in{
     margin-top: 2em;
+    margin-bottom: 50px;
+    color:#f4fd02;
+    font-size: 30px;
 }
 body{
     background-image: url('/static/img/back.jpg');
 }
-form{
-    text-align:center;
-    margin-left:10em;
-}
 table{
     text-align: center;
-    margin-left: 13em;
+    margin-left:22em;
 }
 td{
     padding:2em;
 }
-th{
-    padding :1em;
+th {
+    padding: 2em;
 }
-th, .errormessage{
-    text-align: center;
-    color:rgb(151, 250, 200);
-}
-div{
-    text-align: center;
-    margin-left: 70px;
-}
-.mybutton{
+
+.mybutton, .mya{
     border-radius: 25px;
     border-width: 3px;
     border-color: wheat;
@@ -42,17 +38,16 @@ div{
     height: 40px;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    margin-left: -10em;
-    background-color: rgb(255, 38, 0);
+    background-color: rgb(255, 38, 0); 
     display: inline;
-}
-input{
-    height: 5ex;
-    width: 30ex;
-    border-radius: 25px;
 }
 img {
     border-radius: 8px;
-    padding: 1px;
+    padding: 5px;
     width: 150px;
+}
+#heading{
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
 }

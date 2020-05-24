@@ -2,16 +2,16 @@
 {% load static %}
 
 {% block header %}
-    <link rel="stylesheet" href="{% static 'css/TransitPass/applicationList.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/TransitPass/submittedApplicationList.css' %}" type="text/css">
 {% endblock %}
 
 {% block body %}
-    <h1 >Submitted Applications</h1>
+    <h1>Submitted Applications</h1>
     {% if num_applications == 0 %}
-        <h1>There are no applications left for review.</h1>
+        <h1 id="in">There are no applications left for review.</h1>
     {% else %}
         <table>
-            <tr>
+            <tr id="heading">
                 <th>Sno</th>
                 <th>Application</th>
                 <th>Journey Date</th>
@@ -22,7 +22,7 @@
                     <td>{{ application.full_name }}</td>
                     <td>{{ application.doj }}</td>
                     <td>
-                        <button><a href="/transit-pass/view-application/{{ application.id }}">Review</a></button>
+                        <button class="mybutton"><a class="mya" href="/transit-pass/view-application/{{ application.id }}">Review</a></button>
                     </td>
                 </tr>
             {% endfor %}
