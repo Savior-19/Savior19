@@ -6,42 +6,52 @@
 {% endblock %}
 
 {% block body %}
-    <h1>Check Application Status</h1>
+    <h1>Check Transit Pass Validity</h1>
+    <br>
     <form method="post">
         {% csrf_token %}
-        Enter the Transit Pass Identification Number : 
-        <input type="text" name="pass_id">
-        <br>
-        Enter the mobile number :
-        <input type="text" name="mobile_number">
-        <br>
-        <button type="submit">Submit</button>
+        <table>
+            <tr>
+                <td>Enter Transit Pass Identification Number : </td>
+                <td><input type="text" name="pass_id"></td>
+            </tr>
+            <tr>
+                <td>Enter the mobile number :</td>
+                <td><input type="text" name="mobile_number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button class="mybutton" type="submit">Submit</button></td>
+            </tr>
+        </table>
     </form>
 
     {% if output %}
         {% if error %}
-            The Transit Pass identification number and the mobile number entered do not match our records.
+            <p class='errormessage'>The Transit Pass identification number and the mobile number entered do not match our records.</p>
         {% else %}
-            <table>
-                <tr>
-                    <th>Identification Number</th>
-                    <th>{{ transit_pass.id }}</th>
-                </tr>
-                <tr>
-                    <th>Status</th>
-                    <td>
-                        {% if transit_pass.status == 'A' %}
-                            Active
-                        {% else %}
-                            Expired
-                        {% endif %}
-                    </td>
-                </tr>
-                <tr>
-                    <th>Expires on : </th>
-                    <th>{{ transit_pass.expiry_date }}</th>
-                </tr>
-            </table>
+            <div class="output">
+                <table>
+                    <tr>
+                        <th>Identification Number</th>
+                        <th>{{ transit_pass.id }}</th>
+                    </tr>
+                    <tr>
+                        <th>Status</th>
+                        <td>
+                            {% if transit_pass.status == 'A' %}
+                                Active
+                            {% else %}
+                                Expired
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Expires on : </th>
+                        <th>{{ transit_pass.expiry_date }}</th>
+                    </tr>
+                </table>
+            </div>
         {% endif %}
     {% endif %}
 {% endblock %}

@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-columns: 2.2fr 1fr;
     grid-template-rows: 3fr 5fr;
-    background-image: url(../../img/back.jpg);
+    background-image: url('/static/img/back.jpg');
 }
 
 .logo{

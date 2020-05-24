@@ -7,41 +7,51 @@
 
 {% block body %}
     <h1>Check Application Status</h1>
+    <br><br>
     <form method="post">
         {% csrf_token %}
-        Enter Application Token Number : 
-        <input type="text" name="appln_id">
-        <br>
-        Enter the mobile number :
-        <input type="text" name="mobile_number">
-        <br>
-        <button type="submit">Submit</button>
+        <table>
+            <tr>
+                <td>Enter Application Token Number : </td>
+                <td><input type="text" name="appln_id"></td>
+            </tr>
+            <tr>
+                <td>Enter the mobile number :</td>
+                <td><input type="text" name="mobile_number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button class="mybutton" type="submit">Submit</button></td>
+            </tr>
+        </table>
     </form>
 
     {% if output %}
         {% if error %}
-            The application token id and the mobile number do not match.
+            <p class='errormessage'> The application token id and the mobile number do not match.</p>
         {% else %}
-            <table>
-                <tr>
-                    <th>{{ application.id }}</th>
-                    <th>
-                        {% if application.status == 'A' %}
-                            Applied
-                        {% else %}
-                            {% if application.status == 'AC' %}
-                                Accepted
+            <div class="output">
+                <table>
+                    <tr>
+                        <th>{{ application.id }}</th>
+                        <th>
+                            {% if application.status == 'A' %}
+                                Applied
                             {% else %}
-                                {% if application.status == 'CL' %}
-                                    Clarifications Required
+                                {% if application.status == 'AC' %}
+                                    Accepted
                                 {% else %}
-                                    Rejected
+                                    {% if application.status == 'CL' %}
+                                        Clarifications Required
+                                    {% else %}
+                                        Rejected
+                                    {% endif %}
                                 {% endif %}
                             {% endif %}
-                        {% endif %}
-                    </th>
-                </tr>
-            </table>
+                        </th>
+                    </tr>
+                </table>
+            </div>
         {% endif %}
     {% endif %}
 {% endblock %}

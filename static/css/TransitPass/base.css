@@ -6,7 +6,7 @@ body{
 }
 
 .vio{
-    background-image: linear-gradient(to right, rgb(105, 159, 221),rgb(32, 66, 139));
+    /*background-image: linear-gradient(to right, rgb(105, 159, 221),rgb(32, 66, 139));*/
     height: 100px;
     width: 100%;
     position: relative;
@@ -44,52 +44,19 @@ body{
     padding-bottom: 26px;
 }
 
-.vio ul li:hover{
+/*.vio ul li:hover{
     background-color: brown;
-}
+}*/
 
 .vio .nohover:hover{
     background: none;
 }
 
-.vio ul li ul li{
-    background-color: rgb(204, 93, 93);
-    width: 200px;
-    height: 50px;
-    text-align: center;
-}
-
-.vio ul li a:hover{
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-.vio ul li ul li a{
-    font-size: small;
-    text-decoration: none;
-    padding-top: 15px;
-}
-
-.vio ul li ul{
-    display: none;
-    padding-top: 6px;
-}
-
-.vio ul li:hover ul{
-    display: block;
-}
-
-.vio ul li:hover ul li{
-    display: block;
-}
 
 .pagebody {
     z-index: 0;
     position: relative;
-    margin-bottom: 40px;
     width: 100%;
-    padding-bottom: 20px;
     min-height: 100%;
     height: fit-content;
 }

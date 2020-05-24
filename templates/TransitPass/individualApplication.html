@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block header %}
-    <link rel="stylesheet" href="{% static 'css/TransitPass/applicationList.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/TransitPass/individualApplication.css' %}" type="text/css">
     <script>
         function changedval()
         {
@@ -123,24 +123,30 @@
         </tr>
     </table>
 
-    {% if application.status == 'A' or application.status == 'CL' %}
-        <form method="post">
-            {% csrf_token %}
-            <select name="status" id="status" onchange="changedval()">
-                <option value="AC">Accept</option>
-                <option value="CL">Request Clarification</option>
-                <option value="R">Reject</option>
-            </select>
-            <div id="commentsdiv" style="visibility: hidden;">
-                <h5>Enter your comments : </h5>
-                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-            </div>
-            <div id="expirydiv" style="visibility: visible;">
-                <h5>Enter a expiry date :</h5>
-                <input type="date" name="expiry">
-            </div>
-
-            <button type="submit">Submit</button>
-        </form>
-    {% endif %}
+    <div id="outer">
+        {% if application.status == 'A' or application.status == 'CL' %}
+            <form method="post">
+                {% csrf_token %}
+                <h3>Your Decision : </h3>
+                <br>
+                <select name="status" id="status" onchange="changedval()">
+                    <option value="AC">Accept</option>
+                    <option value="CL">Request Clarification</option>
+                    <option value="R">Reject</option>
+                </select>
+                <br><br>
+                <div id="commentsdiv" style="visibility: hidden;">
+                    <h5>Enter your comments : </h5>
+                    <br>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+                <div id="expirydiv" style="visibility: visible;">
+                    <h5>Enter a expiry date :</h5>
+                    <input type="date" name="expiry">
+                </div>
+                <br>
+                <button class="mybutton" type="submit">Submit</button>
+            </form>
+        {% endif %}
+    </div>
 {% endblock %}
