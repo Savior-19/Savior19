@@ -5,6 +5,8 @@ from . import views
 urlpatterns = [
     path('apply/', views.FillPassApplication, name='transit-pass-application-form'),
 
+    path('application-details/<int:appln_id>', views.DisplayApplicationToken, name='application-details'),
+
     path('view-application-list/', views.DisplayApplicationList, name='view-application-list'),
 
     path('view-application/<int:appln_id>/', views.DisplayIndividualApplication, name='view-individual-application'),
