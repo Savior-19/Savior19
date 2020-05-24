@@ -17,12 +17,12 @@ body {
 
 .logo{
     grid-column-start:1 ;
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-row-start:1 ;
     grid-row-end: 2;
 }
 
-.but{
+.buttondiv{
     grid-column-start:2 ;
     grid-column-end: 3;
     grid-row-start:1 ;
@@ -103,6 +103,13 @@ img{
     background-color: thistle;
 }
 
-a {
+button a {
     text-decoration: none;
+    color: rgb(238, 238, 238);
+}
+
+button {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
 }

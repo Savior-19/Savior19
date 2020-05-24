@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="{% static 'css/registration/login.css' %}" type="text/css">
 	</head>
 
-	{% block body %}
+	<body>
 		{% if user.is_authenticated %}
 			<h1>You are already logged in. Log-out to login into another user.</h1>
 		{% else %}
@@ -24,9 +24,12 @@
 						<div class="button">
 							<button type="submit" class="button">Login</button>
 						</div>
+						<div class="button">
+							<button class="button"><a href="/">Back</a></button>
+						</div>
 					</div>
 				</form>
 			</div>
 		{% endif %}
-	{% endblock %}
+	</body>
 </html>

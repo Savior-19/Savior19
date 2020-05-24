@@ -1,5 +1,7 @@
 body{
     background-color: tomato;
+    margin-left: auto;
+    text-align: center;
 }
 form{
     background-image: linear-gradient(45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef),linear-gradient(45deg,#efefef 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef);
@@ -34,4 +36,16 @@ button{
     height: 3em;
     width: 6em;
     color: rgb(0, 0, 0);
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+}
+
+
+button {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
 }

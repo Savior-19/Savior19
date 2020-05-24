@@ -39,7 +39,9 @@ def FillPassApplication(request) :
 	
 	else :
 		# Render an application form.
-		return render(request, 'TransitPass/apply.html')
+		states = State.objects.all()
+		districts = District.objects.all()
+		return render(request, 'TransitPass/apply.html', {'states' : states, 'districts' : districts})
 
 
 # ---------------------------------------------------------- Government Official's Pages -----------------------------------------------------------

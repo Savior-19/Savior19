@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="{% static 'css/TransitPass/apply.css' %}">
 	</head>
 	<body>
-		<h1>Application form</h1>
+		<h1 style="text-align: center;">Application form</h1>
 		<form method="post" enctype="multipart/form-data">
 			{% csrf_token %}
 			<div class="fom">
@@ -62,14 +62,18 @@
 				
 				<select name="state" required>
 					<option value="select" disabled selected> Select</option>
-					<option value="Tamil Nadu">Tamil Nadu</option>
+					{% for state in states %}
+						<option value="{{ state.name }}"> {{ state.name }} </option>
+					{% endfor %}
 				</select>
 				<br><br>
 				<h4>District:-</h4>
 				
 				<select name="district"  required>
 					<option value="select" disabled selected> Select</option>
-					<option value="Madurai">Madurai</option>
+					{% for district in districts %}
+						<option value="{{ district.name }}"> {{ district.name }} </option>
+					{% endfor %}
 				</select>
 				<h4>Purpose:-</h4>
 				
@@ -110,5 +114,6 @@
 				<button type="submit">Submit</button>
 			</div>
 		</form>
+		<button style="margin-left: auto;"><a href="/">Back</a></button>
 	</body>
 </html>
