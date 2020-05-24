@@ -81,10 +81,13 @@ class TransitPassApplication(models.Model) :
     purpose = models.TextField(max_length=5000, verbose_name="Purpose for travel")
     source = models.CharField(max_length=100, verbose_name="Source Area")
     destination = models.CharField(max_length=100, verbose_name="Destination Area")
-    #doj = models.DateField(verbose_name="Date of Journey", auto_now=True)
+    doj = models.DateField(verbose_name="Date of Journey", auto_now=True)
     document = models.FileField(verbose_name="Suppporting Documents", blank=True)
-    STATUS_CHOICES = [('A', 'APPLIED'), ('V', 'VERIFIED'), ('AC', 'ACCEPTED'), ('R', 'REJECTED')]
+    STATUS_CHOICES = [('A', 'APPLIED'), ('CL', 'CLARIFICATIONS REQUIRED'), ('AC', 'ACCEPTED'), ('R', 'REJECTED')]
     status = models.CharField(max_length=5, verbose_name='Application Status', choices=STATUS_CHOICES, default='A')
+    VEHICLE_CHOICES = [('T', 'TWO WHEELER'), ('F', 'FOUR WHEELER')]
+    vehicle_type = models.CharField(max_length=5, verbose_name='Vehicle Type', choices=VEHICLE_CHOICES, default='T')
+    vehicle_no = models.CharField(max_length=15, verbose_name='Vehicle Registration Number', null=True)
 
     class Meta() :
         verbose_name = "Transit Pass Application"
@@ -93,4 +96,23 @@ class TransitPassApplication(models.Model) :
     def __str__(self) :
         name_string = self.full_name + " - " + self.district.name + " - " + self.state.name
         return name_string
+    
+    def delete(self, *args, **kwargs) :
+        self.document.delete()
+        super().delete(*args, **kwargs)
 
+
+class TransitPass(models.Model) :
+    application = models.ForeignKey(TransitPassApplication, on_delete=models.SET_NULL, related_name='transit_pass_object', null=True)
+    authorizer = models.ForeignKey('users.CustomUser', on_delete=models.CASCADE, limit_choices_to = models.Q(role='DisOff') | models.Q(role='StOff'))
+    issue_date = models.DateField(verbose_name='Date Of Issue', auto_now=True)
+    expiry_date = models.DateField(verbose_name='Valid Upto')
+    STATUS_CHOICES = [('A', 'ACTIVE'), ('E', 'EXPIRED')]
+    status = models.CharField(max_length=5, verbose_name='Pass Status', choices=STATUS_CHOICES, default='A')
+
+    class Meta() :
+        verbose_name = 'Transit Pass'
+        verbose_name_plural = 'Transit Passes'
+    
+    def __str__(self):
+        return self.application.full_name + str(self.expiry_date)

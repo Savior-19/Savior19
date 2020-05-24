@@ -1,0 +1,47 @@
+{% extends 'TransitPass/base.html' %}
+{% load static %}
+
+{% block header %}
+    <link rel="stylesheet" href="{% static 'css/TransitPass/checkStatus.css' %}" type="text/css">
+{% endblock %}
+
+{% block body %}
+    <h1>Check Application Status</h1>
+    <form method="post">
+        {% csrf_token %}
+        Enter Application Token Number : 
+        <input type="text" name="appln_id">
+        <br>
+        Enter the mobile number :
+        <input type="text" name="mobile_number">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if output %}
+        {% if error %}
+            The application token id and the mobile number do not match.
+        {% else %}
+            <table>
+                <tr>
+                    <th>{{ application.id }}</th>
+                    <th>
+                        {% if application.status == 'A' %}
+                            Applied
+                        {% else %}
+                            {% if application.status == 'AC' %}
+                                Accepted
+                            {% else %}
+                                {% if application.status == 'CL' %}
+                                    Clarifications Required
+                                {% else %}
+                                    Rejected
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    </th>
+                </tr>
+            </table>
+        {% endif %}
+    {% endif %}
+{% endblock %}
