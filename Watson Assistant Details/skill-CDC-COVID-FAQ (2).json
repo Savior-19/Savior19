@@ -1,0 +1,5037 @@
+{
+  "intents": [
+    {
+      "intent": "ProtectingChildren",
+      "examples": [
+        {
+          "text": "Protecting children"
+        },
+        {
+          "text": "what will protect my kids from getting the infection?"
+        },
+        {
+          "text": "How can I protect my child from COVID-19 infection?"
+        },
+        {
+          "text": "is handwashing important for children?"
+        },
+        {
+          "text": "should I disinfect my kid's toys?"
+        }
+      ],
+      "description": "Guidance for keeping children protected"
+    },
+    {
+      "intent": "effect_of_corona",
+      "examples": [
+        {
+          "text": "Is corona dangerous"
+        },
+        {
+          "text": "Which organ it affects the most"
+        },
+        {
+          "text": "can corona kill me"
+        },
+        {
+          "text": "Why corona is dangerous"
+        },
+        {
+          "text": "What is the effect of corona"
+        },
+        {
+          "text": "How does corona damage the human body"
+        },
+        {
+          "text": "how corona effect us"
+        },
+        {
+          "text": "is corona deadly"
+        }
+      ],
+      "description": "what is the effect of corona "
+    },
+    {
+      "intent": "Schoolfromhome",
+      "examples": [
+        {
+          "text": "I need tips for at home learning"
+        },
+        {
+          "text": "how do I keep my child engaged in schoolwork?"
+        },
+        {
+          "text": "While school’s out, how can I help my child continue learning?"
+        },
+        {
+          "text": "School from home"
+        },
+        {
+          "text": "Tips for my child's schedule when school is canceled."
+        }
+      ],
+      "description": "Conducting remote education while school is dismissed"
+    },
+    {
+      "intent": "DisinfectingSurfaces",
+      "examples": [
+        {
+          "text": "Disinfecting surfaces"
+        },
+        {
+          "text": "Do I need to clean with bleach?"
+        },
+        {
+          "text": "How do I clean my home to remove virus molecules"
+        },
+        {
+          "text": "What cleaning products should I use to protect against COVID-19?"
+        },
+        {
+          "text": "how should i disinfect my home?"
+        },
+        {
+          "text": "what products are best at disinfecting?"
+        },
+        {
+          "text": "Where do i need to disinfect?"
+        }
+      ],
+      "description": "Disinfection Guidance"
+    },
+    {
+      "intent": "spreadviafood",
+      "examples": [
+        {
+          "text": "spread via food"
+        },
+        {
+          "text": "does it spread on food packaging?"
+        },
+        {
+          "text": "does the virus stick to packaged food?"
+        },
+        {
+          "text": "Can the virus that causes COVID-19 be spread through food, including refrigerated or frozen food?"
+        },
+        {
+          "text": "do I need to wash my groceries?"
+        }
+      ],
+      "description": "Virus spread from food or food packaging"
+    },
+    {
+      "intent": "IPLstart",
+      "examples": [
+        {
+          "text": "Tell me about resumption of IPL"
+        },
+        {
+          "text": "When will IPL be hosted"
+        },
+        {
+          "text": "Will IPL get cancelled?"
+        },
+        {
+          "text": "When will IPL start"
+        },
+        {
+          "text": "how long it will take to start IPL"
+        },
+        {
+          "text": "How is IPL effected from corona"
+        },
+        {
+          "text": "What is the update about IPL"
+        },
+        {
+          "text": "Will IPL-14 never happen"
+        }
+      ],
+      "description": "Question regarding ipl "
+    },
+    {
+      "intent": "Symptomsinchildren",
+      "examples": [
+        {
+          "text": "Symptoms in children"
+        },
+        {
+          "text": "do children react differently to the virus than adults do?"
+        },
+        {
+          "text": "do kids get different symptoms?"
+        },
+        {
+          "text": "what are the symptoms in children?"
+        },
+        {
+          "text": "Are the symptoms of COVID-19 different in children than in adults?"
+        }
+      ],
+      "description": "Signs and symptoms in children and differences from adults"
+    },
+    {
+      "intent": "RiskToChildren",
+      "examples": [
+        {
+          "text": "Are children at higher risk of getting sick?"
+        },
+        {
+          "text": "Risk to children"
+        },
+        {
+          "text": "Can corona virus infect an infant?"
+        },
+        {
+          "text": "do children catch covid-19?"
+        },
+        {
+          "text": "What is the risk of my child becoming sick with COVID-19?"
+        },
+        {
+          "text": "Are kids at increased risk of infection?"
+        }
+      ],
+      "description": "Guidance on potential risk to Children"
+    },
+    {
+      "intent": "Testing",
+      "examples": [
+        {
+          "text": "who should get tested?"
+        },
+        {
+          "text": "Should I be tested for COVID-19?"
+        },
+        {
+          "text": "can my doctor test me if I start feeling sick?"
+        },
+        {
+          "text": "should I head to the doctor if I show symptoms?"
+        }
+      ],
+      "description": "When, where, how of getting yourself tested"
+    },
+    {
+      "intent": "ProductsFromChina",
+      "examples": [
+        {
+          "text": "are packages from China infected?"
+        },
+        {
+          "text": "is it safe to buy Chinese products?"
+        },
+        {
+          "text": "Products from China"
+        },
+        {
+          "text": "should i stop buying products from China?"
+        },
+        {
+          "text": "Am I at risk for COVID-19 from a package or products shipping from China?"
+        }
+      ],
+      "description": "Guidance regarding packages from China"
+    },
+    {
+      "intent": "jokes",
+      "examples": [
+        {
+          "text": "time pass"
+        },
+        {
+          "text": "joke"
+        },
+        {
+          "text": "covid jokes"
+        },
+        {
+          "text": "tell me a joke"
+        },
+        {
+          "text": "i am bored"
+        },
+        {
+          "text": "tell me joke"
+        }
+      ],
+      "description": "tells covid jokes"
+    },
+    {
+      "intent": "howtesting",
+      "examples": [
+        {
+          "text": "How many tests are there for covid?"
+        },
+        {
+          "text": "tell me about testing"
+        },
+        {
+          "text": "what are the different types of tests"
+        },
+        {
+          "text": "how corona is tested in humans"
+        },
+        {
+          "text": "how covid is tested"
+        },
+        {
+          "text": "How many tests are there for corona virus?"
+        },
+        {
+          "text": "How is testing done"
+        }
+      ],
+      "description": "how the covid testing is done"
+    },
+    {
+      "intent": "hotspot",
+      "examples": [
+        {
+          "text": "What are hotspots of corona"
+        },
+        {
+          "text": "What is a covid 19 hotspot"
+        },
+        {
+          "text": "tell me about corona hotspot"
+        },
+        {
+          "text": "Info on hotspots of covid"
+        },
+        {
+          "text": "Can you give me information reagrding hotspots"
+        }
+      ],
+      "description": "What is a covid hotspot"
+    },
+    {
+      "intent": "eco_stats",
+      "examples": [
+        {
+          "text": "who much loss or gain due to covid"
+        },
+        {
+          "text": "what are the economic stats of the country"
+        },
+        {
+          "text": "what economic loss is there"
+        },
+        {
+          "text": "what is the economical aspect"
+        },
+        {
+          "text": "what is the economic impact of covid on india"
+        },
+        {
+          "text": "what are the eco stats of the country"
+        }
+      ],
+      "description": "economic statistics due to covid pandemic of india "
+    },
+    {
+      "intent": "schoolclosing",
+      "examples": [
+        {
+          "text": "school closing"
+        },
+        {
+          "text": "how do I know if my school is closing?"
+        },
+        {
+          "text": "Will schools be dismissed if there is an outbreak in my community?"
+        },
+        {
+          "text": "why are schools closing?"
+        },
+        {
+          "text": "who gets to decide if the school will close?"
+        }
+      ],
+      "description": "School closings information"
+    },
+    {
+      "intent": "resources",
+      "examples": [
+        {
+          "text": "community kitchen details"
+        },
+        {
+          "text": "delivery service number"
+        },
+        {
+          "text": "ngo number in"
+        },
+        {
+          "text": "police contact in"
+        },
+        {
+          "text": "police number in"
+        },
+        {
+          "text": "ngo contact"
+        },
+        {
+          "text": "contact number of ngo in"
+        },
+        {
+          "text": "delivery service number in"
+        },
+        {
+          "text": "contact of delivery service in"
+        },
+        {
+          "text": "helpline number for"
+        },
+        {
+          "text": "testing lab details"
+        },
+        {
+          "text": "NGO contacts in"
+        },
+        {
+          "text": "police helpline in"
+        },
+        {
+          "text": "hospital contact for"
+        },
+        {
+          "text": "food service details in"
+        },
+        {
+          "text": "government helpline for"
+        },
+        {
+          "text": "hospital number in"
+        },
+        {
+          "text": "testing lab contact for"
+        },
+        {
+          "text": "Testing facilities in Jaipur"
+        },
+        {
+          "text": "food services contact for"
+        },
+        {
+          "text": "community kitchen contact"
+        },
+        {
+          "text": "helpline number testing lab number"
+        }
+      ],
+      "description": "to get numbers to contact resources "
+    },
+    {
+      "intent": "spreadinquarantine",
+      "examples": [
+        {
+          "text": "what is the incubation period of this corona virus?"
+        },
+        {
+          "text": "Can someone who has been quarantined for COVID-19 spread the illness to others?"
+        },
+        {
+          "text": "does quarantining people stop the spread of corona virus?"
+        },
+        {
+          "text": "does putting infected people into quarantine help?"
+        },
+        {
+          "text": "spread in quarantine"
+        },
+        {
+          "text": "what is a quarantine?"
+        }
+      ],
+      "description": "does quarantining people stop the spread of corona virus?"
+    },
+    {
+      "intent": "PreparingChildren",
+      "examples": [
+        {
+          "text": "what should I tell my child about this pandemic?"
+        },
+        {
+          "text": "how do I keep my kids from worrying about the virus?"
+        },
+        {
+          "text": "How do I prepare my children in case of COVID-19 outbreak in our community?"
+        },
+        {
+          "text": "My child is stressed about the crisis how can I help?"
+        },
+        {
+          "text": "Preparing children"
+        }
+      ],
+      "description": "Guidance for calming and protecting children"
+    },
+    {
+      "intent": "InfectedFamilyMember",
+      "examples": [
+        {
+          "text": "do I need to quarantine ill family members?"
+        },
+        {
+          "text": "Infected family member"
+        },
+        {
+          "text": "what do i do when someone in my home gets it?"
+        },
+        {
+          "text": "What should I do if someone in my house gets sick with COVID-19?"
+        },
+        {
+          "text": "my roommate has corona virus what should I do?"
+        }
+      ],
+      "description": "Guidance if a Family Member is infected"
+    },
+    {
+      "intent": "AttendingFuneral",
+      "examples": [
+        {
+          "text": "Should I avoid funerals?"
+        },
+        {
+          "text": "Are funerals safe? "
+        },
+        {
+          "text": "Can I go to a funeral of someone who died of  Corona Virus (COVID-19)?"
+        },
+        {
+          "text": "Can I go to a funeral? "
+        },
+        {
+          "text": "Am I at risk if I go to a funeral or visitation service for someone who died of COVID-19?"
+        }
+      ],
+      "description": "Funeral attendance guidance"
+    },
+    {
+      "intent": "masks",
+      "examples": [
+        {
+          "text": "how many masks do we have"
+        },
+        {
+          "text": "what is the mask production status in india"
+        },
+        {
+          "text": "what kind of masks should i wear"
+        }
+      ],
+      "description": "about masks in india "
+    },
+    {
+      "intent": "Lockdown",
+      "examples": [
+        {
+          "text": "what is the recent news on lockdown"
+        },
+        {
+          "text": "when will this lockdown be over"
+        },
+        {
+          "text": "why modi ji imposed lockdown"
+        },
+        {
+          "text": "tell me about this lockdown"
+        },
+        {
+          "text": "why there is this lockdown"
+        }
+      ],
+      "description": "information regarding lockdown in india"
+    },
+    {
+      "intent": "Wearingfacemasks",
+      "examples": [
+        {
+          "text": "Does CDC recommend the use of facemask to prevent COVID-19?"
+        },
+        {
+          "text": "Do I need to wear a face mask?"
+        },
+        {
+          "text": "What do face masks do? "
+        },
+        {
+          "text": "Wearing face masks"
+        },
+        {
+          "text": "Should my child wear a face mask?"
+        },
+        {
+          "text": "Should I wear a face mask?"
+        },
+        {
+          "text": "Should I use a face mask when in public?"
+        },
+        {
+          "text": "Someone in my household is sick should we wear masks at home?"
+        },
+        {
+          "text": "Do face masks do anything?"
+        }
+      ],
+      "description": "General facemask questions"
+    },
+    {
+      "intent": "CoronaWarriors",
+      "examples": [
+        {
+          "text": "What is the role of corona warriors in India"
+        },
+        {
+          "text": "What are health workers fighting against corona in india are called"
+        },
+        {
+          "text": "What is the major line of defense in india for corona"
+        },
+        {
+          "text": "Are corona warriors only consist of Doctors"
+        },
+        {
+          "text": "Can i get information regarding the corona warriors"
+        },
+        {
+          "text": "how many corona warriors in india"
+        },
+        {
+          "text": "Tell me about corona warriors"
+        },
+        {
+          "text": "What are corona warriors"
+        },
+        {
+          "text": "What is the role of corona warriors"
+        }
+      ],
+      "description": "Description regarding corona warriors"
+    },
+    {
+      "intent": "whocreatedu",
+      "examples": [
+        {
+          "text": "who is your owner"
+        },
+        {
+          "text": "who created you?"
+        },
+        {
+          "text": "who created you"
+        },
+        {
+          "text": "who is your creator?"
+        },
+        {
+          "text": "tell me about your creator?"
+        },
+        {
+          "text": "who made you"
+        },
+        {
+          "text": "your creator"
+        },
+        {
+          "text": "your maker"
+        },
+        {
+          "text": "tell me about your creator"
+        },
+        {
+          "text": "who developed you"
+        }
+      ],
+      "description": "information on the creator of the bot"
+    },
+    {
+      "intent": "HandwashingTips",
+      "examples": [
+        {
+          "text": "how do i wash my hands correctly?"
+        },
+        {
+          "text": "is hand sanitizer effective against covid-19?"
+        },
+        {
+          "text": "Handwashing tips"
+        },
+        {
+          "text": "handwashing products"
+        },
+        {
+          "text": "will washing my hands help protect me?"
+        },
+        {
+          "text": "will frequent handwashing help?"
+        },
+        {
+          "text": "Should I use soap and water or a hand sanitizer to protect against COVID-19?"
+        },
+        {
+          "text": "should i keep washing my hands"
+        }
+      ],
+      "description": "Hand Washing Guidance"
+    },
+    {
+      "intent": "HealthDeptRecommendedActions",
+      "examples": [
+        {
+          "text": "can CDC help my local board of health"
+        },
+        {
+          "text": "how do I ship a specimen to the CDC lab?"
+        },
+        {
+          "text": "Health dept recommended actions"
+        },
+        {
+          "text": "does CDC provide protocols for labs to test covid-19?"
+        },
+        {
+          "text": "What should healthcare professionals and health departments do?"
+        },
+        {
+          "text": "can CDC help my local health dept get protective gear?"
+        }
+      ],
+      "description": "Recommended actions by from the Health Dept"
+    },
+    {
+      "intent": "News_Corona_Virus",
+      "examples": [
+        {
+          "text": "NEWS"
+        },
+        {
+          "text": "latest news on corona virus"
+        },
+        {
+          "text": "Whats happening?"
+        },
+        {
+          "text": "whats happening"
+        },
+        {
+          "text": "What is in the NEWS?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "ReduceFamilyRisk",
+      "examples": [
+        {
+          "text": "Reduce family risk"
+        },
+        {
+          "text": "lower my family's risk of getting sick"
+        },
+        {
+          "text": "What steps can my family take to reduce our risk of getting COVID-19?"
+        },
+        {
+          "text": "What should I have my family do to keep from getting sick?"
+        },
+        {
+          "text": "what are the top tips to keep my family from catching it?"
+        }
+      ],
+      "description": "Guidance on reducing risk to your family"
+    },
+    {
+      "intent": "HowDoesItSpread",
+      "examples": [
+        {
+          "text": "does the corona virus spread easily?"
+        },
+        {
+          "text": "is corona virus contagious?"
+        },
+        {
+          "text": "What are the medium of the spread of corona"
+        },
+        {
+          "text": "Is the virus airborne"
+        },
+        {
+          "text": "can The corona travel through air"
+        },
+        {
+          "text": "what are mediums of spread"
+        },
+        {
+          "text": "what are the mediums it can spread"
+        },
+        {
+          "text": "I want to know what medium does it spread"
+        },
+        {
+          "text": "Is it airborne"
+        },
+        {
+          "text": "how did the virus spread from China?"
+        }
+      ],
+      "description": "Info on how COVID Spreads"
+    },
+    {
+      "intent": "AnimalContact",
+      "examples": [
+        {
+          "text": "Should I avoid contact with pets or other animals if I am sick with COVID-19?"
+        },
+        {
+          "text": "Animal contact"
+        },
+        {
+          "text": "can I get covid-19 from my pet?"
+        },
+        {
+          "text": "can I get this from my cat?"
+        },
+        {
+          "text": "can I get this from my dog?"
+        },
+        {
+          "text": "can my dog catch corona virus?"
+        },
+        {
+          "text": "do dogs and cats get sick from corona virus?"
+        }
+      ],
+      "description": "Human - Animal interaction guidance"
+    },
+    {
+      "intent": "comorbid_condition",
+      "examples": [
+        {
+          "text": "is comobid condition people are more prone to corona"
+        },
+        {
+          "text": "What is comorbidity"
+        },
+        {
+          "text": "What comes under comorbidity"
+        },
+        {
+          "text": "is comorbid condition dangerous"
+        },
+        {
+          "text": "comment on comorbidity"
+        },
+        {
+          "text": "What do you mean by comorbidity"
+        },
+        {
+          "text": "What are the diseases under comorbid condition"
+        },
+        {
+          "text": "What is comorbid condition"
+        }
+      ],
+      "description": "about comorbid condition"
+    },
+    {
+      "intent": "MealsForStudents",
+      "examples": [
+        {
+          "text": "Meals for students"
+        },
+        {
+          "text": "are schools continuing to serve school lunch plans even if classes are closed?"
+        },
+        {
+          "text": "how are students on school lunch plans getting their meals?"
+        },
+        {
+          "text": "While school’s out, will kids have access to meals?"
+        },
+        {
+          "text": "will school students be able to get their free meals?"
+        }
+      ],
+      "description": "Info regarding school and student meals"
+    },
+    {
+      "intent": "DataSource",
+      "examples": [
+        {
+          "text": "Is this information accurate?"
+        },
+        {
+          "text": "what do you refer"
+        },
+        {
+          "text": "what are your sources"
+        },
+        {
+          "text": "Is this true?"
+        },
+        {
+          "text": "Where do you get your information?"
+        },
+        {
+          "text": "How do you know this?"
+        },
+        {
+          "text": "Are you sure?"
+        },
+        {
+          "text": "Where did you learn this?"
+        }
+      ],
+      "description": "Information on where this bot sourced it's data"
+    },
+    {
+      "intent": "ppe",
+      "examples": [
+        {
+          "text": "do general public need ppe"
+        },
+        {
+          "text": "what is ppe"
+        },
+        {
+          "text": "who needs ppe"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "coronapositive",
+      "examples": [
+        {
+          "text": "am i corona positive"
+        },
+        {
+          "text": "do i have it"
+        },
+        {
+          "text": "i may be contracted to a disease"
+        },
+        {
+          "text": "i fear i have covid"
+        },
+        {
+          "text": "i am having cough"
+        },
+        {
+          "text": "i am having corona what should i do"
+        },
+        {
+          "text": "i am feeling cough,fever from two days"
+        },
+        {
+          "text": "i feel sick"
+        },
+        {
+          "text": "I feel difficulty in breathing"
+        },
+        {
+          "text": "i feel sick from past two days"
+        },
+        {
+          "text": "i have cough"
+        },
+        {
+          "text": "I am feeling unwell"
+        }
+      ],
+      "description": "if a person is posiutive or is suspected then what should he do"
+    },
+    {
+      "intent": "PersonToPerson",
+      "examples": [
+        {
+          "text": "Why is  Corona Virus (COVID-19) spreading between people?"
+        },
+        {
+          "text": "Why is it so contagious?"
+        },
+        {
+          "text": "Who can I get it from?"
+        },
+        {
+          "text": "person to person"
+        },
+        {
+          "text": "How does  Corona Virus (COVID-19) spread?"
+        },
+        {
+          "text": "Can someone who has had COVID-19 spread the illness to others?"
+        },
+        {
+          "text": "Can I catch it from my friend?"
+        },
+        {
+          "text": "Can  Corona Virus (COVID-19) spread from person-to-person?"
+        },
+        {
+          "text": "how to be safe from covid"
+        }
+      ],
+      "description": "Info on how Coronavirus spreads person to person"
+    },
+    {
+      "intent": "pandemic",
+      "examples": [
+        {
+          "text": "when was it given the name pandemic"
+        },
+        {
+          "text": "tell me some examples of other pandemics"
+        },
+        {
+          "text": "what is this pandemic"
+        },
+        {
+          "text": "does WHO given it the name pandemic"
+        },
+        {
+          "text": "Why corona is called a pandemic"
+        },
+        {
+          "text": "why covid 19 is called a pandemic"
+        },
+        {
+          "text": "why corona is pandemic"
+        }
+      ],
+      "description": "why it is called pandemic"
+    },
+    {
+      "intent": "Asymptomatic",
+      "examples": [
+        {
+          "text": "can corona be present in anyone"
+        },
+        {
+          "text": "Can corona be present even if there are no symptoms"
+        },
+        {
+          "text": "is corona asymptomatic"
+        },
+        {
+          "text": "is it asymptomatic"
+        }
+      ],
+      "description": "is corona asymptomatic"
+    },
+    {
+      "intent": "whenwewillgetrid",
+      "examples": [
+        {
+          "text": "Will corona crisis end in future?"
+        },
+        {
+          "text": "what is the future of this covid-19 disease"
+        },
+        {
+          "text": "How much more time we have to be with corona"
+        },
+        {
+          "text": "How long it will take to get rid of corona"
+        },
+        {
+          "text": "When we will get rid of corona"
+        },
+        {
+          "text": "When will the corona get over"
+        },
+        {
+          "text": "when will this covid 19 crisis might end"
+        },
+        {
+          "text": "Predict on the end of corona"
+        },
+        {
+          "text": "How this crisis will ned"
+        }
+      ],
+      "description": "answer to asking about future of corona"
+    },
+    {
+      "intent": "Wherediditstart",
+      "examples": [
+        {
+          "text": "Where did corona virus originate from?"
+        },
+        {
+          "text": "which location did corona virus start from?"
+        },
+        {
+          "text": "Where did it start"
+        },
+        {
+          "text": "What is the source of the virus?"
+        },
+        {
+          "text": "who is the culprit of it"
+        },
+        {
+          "text": "where did it came from"
+        },
+        {
+          "text": "where did corona came from"
+        }
+      ],
+      "description": "Handle questions about the origins of the virus in humans"
+    },
+    {
+      "intent": "ReportingToWork",
+      "examples": [
+        {
+          "text": "what are my work from home options?"
+        },
+        {
+          "text": "I'm supposed to work but my child's school is canceled"
+        },
+        {
+          "text": "Reporting to work"
+        },
+        {
+          "text": "Should I go to work if there is an outbreak in my community?"
+        },
+        {
+          "text": "will my office be closed?"
+        }
+      ],
+      "description": "Guidance on going in to work"
+    },
+    {
+      "intent": "ProtectiveEquipmentfordoctors",
+      "examples": [
+        {
+          "text": "How the doctors treating corona make sure of their safety?"
+        },
+        {
+          "text": "Tell me about the kits doctor uses"
+        },
+        {
+          "text": "how are doctors safe?"
+        },
+        {
+          "text": "What type of face mask doctor uses"
+        },
+        {
+          "text": "Protective equipment for doctor and medical staff"
+        },
+        {
+          "text": "Medical staff safety"
+        },
+        {
+          "text": "What are PPE kits"
+        }
+      ],
+      "description": "masks and kits for doctors"
+    },
+    {
+      "intent": "WhatisCovid",
+      "examples": [
+        {
+          "text": "How did the  Corona Virus (COVID-19) spread from China?"
+        },
+        {
+          "text": "covid 19"
+        },
+        {
+          "text": "Carona Virus"
+        },
+        {
+          "text": "What is a novel coronavirus?"
+        },
+        {
+          "text": "When did  Corona Virus (COVID-19) start?"
+        },
+        {
+          "text": "what is carona virus?"
+        },
+        {
+          "text": "Why did  Corona Virus (COVID-19) spread?"
+        },
+        {
+          "text": "Where was  Corona Virus (COVID-19) first spotted."
+        },
+        {
+          "text": "Where did  Corona Virus (COVID-19) appear?"
+        },
+        {
+          "text": "When did  Corona Virus (COVID-19) appear?"
+        },
+        {
+          "text": "What is SARS-CoV-2?"
+        },
+        {
+          "text": "what is corona"
+        },
+        {
+          "text": "tell me about corona"
+        },
+        {
+          "text": "tell me about covid"
+        },
+        {
+          "text": "Is corona a disorder"
+        },
+        {
+          "text": "What is Covid"
+        },
+        {
+          "text": "What is COVID 19?"
+        }
+      ],
+      "description": "Description and definition of COVID19"
+    },
+    {
+      "intent": "goodbyes",
+      "examples": [
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "ttyl"
+        },
+        {
+          "text": "ty"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "bye im going to play a game"
+        },
+        {
+          "text": "i am done with you"
+        },
+        {
+          "text": "o thank u"
+        },
+        {
+          "text": "ok thanks"
+        },
+        {
+          "text": "ok thank you for your time"
+        },
+        {
+          "text": "ok thank you"
+        },
+        {
+          "text": "stop"
+        },
+        {
+          "text": "gtg go right now ok"
+        },
+        {
+          "text": "got to go bye nice time talking to you"
+        },
+        {
+          "text": "goodbye joto"
+        },
+        {
+          "text": "good bye hohoho"
+        },
+        {
+          "text": "dont need your help at all"
+        },
+        {
+          "text": "done"
+        },
+        {
+          "text": "be quiet robot"
+        },
+        {
+          "text": "thanks for your help"
+        },
+        {
+          "text": "shut up"
+        },
+        {
+          "text": "see ya soon"
+        },
+        {
+          "text": "see ya later"
+        },
+        {
+          "text": "see ya"
+        },
+        {
+          "text": "run"
+        },
+        {
+          "text": "over and out"
+        },
+        {
+          "text": "out of time"
+        },
+        {
+          "text": "ok bye"
+        },
+        {
+          "text": "my time is up"
+        },
+        {
+          "text": "logging off"
+        },
+        {
+          "text": "leave"
+        },
+        {
+          "text": "laters"
+        },
+        {
+          "text": "no problem"
+        },
+        {
+          "text": "i'm leaving"
+        },
+        {
+          "text": "g'day"
+        },
+        {
+          "text": "good night"
+        },
+        {
+          "text": "adieu"
+        },
+        {
+          "text": "adios"
+        },
+        {
+          "text": "au revoir"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "bye bye"
+        },
+        {
+          "text": "bye now"
+        },
+        {
+          "text": "catch ya later"
+        },
+        {
+          "text": "cya"
+        },
+        {
+          "text": "farewell"
+        },
+        {
+          "text": "go"
+        },
+        {
+          "text": "goodbye"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "good day"
+        },
+        {
+          "text": "gday"
+        },
+        {
+          "text": "gotta go"
+        },
+        {
+          "text": "gotta run"
+        },
+        {
+          "text": "gtg"
+        },
+        {
+          "text": "have a good one"
+        },
+        {
+          "text": "im leaving"
+        },
+        {
+          "text": "later"
+        },
+        {
+          "text": "see you"
+        },
+        {
+          "text": "see you later"
+        },
+        {
+          "text": "should be going"
+        },
+        {
+          "text": "should go"
+        },
+        {
+          "text": "signing off"
+        },
+        {
+          "text": "signing out"
+        },
+        {
+          "text": "so long"
+        },
+        {
+          "text": "soon"
+        },
+        {
+          "text": "take care"
+        },
+        {
+          "text": "take it easy"
+        },
+        {
+          "text": "sorry got to go"
+        },
+        {
+          "text": "thank you for the info"
+        },
+        {
+          "text": "no thank you"
+        },
+        {
+          "text": "youre welcome now bye"
+        },
+        {
+          "text": "ok"
+        },
+        {
+          "text": "tata"
+        },
+        {
+          "text": "talk to you soon"
+        },
+        {
+          "text": "talk to you later"
+        },
+        {
+          "text": "thanks watson"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "then bye"
+        },
+        {
+          "text": "toodles"
+        }
+      ]
+    },
+    {
+      "intent": "NegativeTestResults",
+      "examples": [
+        {
+          "text": "Does a negative test mean a person does not have COVID-19?"
+        },
+        {
+          "text": "Can a person test negative and later test positive for COVID-19?"
+        },
+        {
+          "text": "Can you have corona virus and still test negative?"
+        },
+        {
+          "text": "if you test negative can you still get COVID-19 later?"
+        },
+        {
+          "text": "Negative test results"
+        }
+      ],
+      "description": "Considerations for receiving negative test results"
+    },
+    {
+      "intent": "Stigmatizedgroups",
+      "examples": [
+        {
+          "text": "is the pandemic causing discrimination against Chinese people?"
+        },
+        {
+          "text": "Stigmatized groups"
+        },
+        {
+          "text": "Why might someone blame or avoid individuals and groups (create stigma) because of COVID-19?"
+        },
+        {
+          "text": "What causes stereotyping and blame?"
+        },
+        {
+          "text": "are Asian people being unfarely blamed for corona virus?"
+        }
+      ],
+      "description": "About racial discrimination or shaming"
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "yo"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hello watson"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "hi there"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hey there"
+        },
+        {
+          "text": "heya"
+        },
+        {
+          "text": "Hi"
+        },
+        {
+          "text": "howdy"
+        },
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "feeling a bit low"
+        },
+        {
+          "text": "Olla"
+        },
+        {
+          "text": "Hii"
+        },
+        {
+          "text": "aloha"
+        },
+        {
+          "text": "hiya"
+        },
+        {
+          "text": "Hiii"
+        },
+        {
+          "text": "Can you help me"
+        },
+        {
+          "text": "yello"
+        },
+        {
+          "text": "ciao"
+        },
+        {
+          "text": "buenos dias"
+        },
+        {
+          "text": "bonjour"
+        },
+        {
+          "text": "namaste"
+        },
+        {
+          "text": "good evening"
+        }
+      ]
+    },
+    {
+      "intent": "ChildrenAndFaceMasks",
+      "examples": [
+        {
+          "text": "are facemasks recommended for children"
+        },
+        {
+          "text": "Should children wear masks?"
+        },
+        {
+          "text": "does my daughter need to wear a facemask?"
+        },
+        {
+          "text": "Children and facemasks"
+        },
+        {
+          "text": "can my child play outside without a mask?"
+        }
+      ],
+      "description": "Guidance regarding Children wearing Facemasks"
+    },
+    {
+      "intent": "HighestCases",
+      "examples": [
+        {
+          "text": "where are highest cases?"
+        },
+        {
+          "text": "which country has highest cases?"
+        },
+        {
+          "text": "Where are highest cases in the world?"
+        },
+        {
+          "text": "Highest cases in world?"
+        },
+        {
+          "text": "Country with most cases?"
+        },
+        {
+          "text": "place with most cases"
+        },
+        {
+          "text": "place with Hisghest cases?"
+        },
+        {
+          "text": "10 countries with the most number of cases"
+        },
+        {
+          "text": "Top 5 effected countries in the world"
+        },
+        {
+          "text": "Top 3 effected countries"
+        },
+        {
+          "text": "6 most effected countries"
+        },
+        {
+          "text": "5 most effected states in india"
+        },
+        {
+          "text": "Top 5 effected states in india"
+        },
+        {
+          "text": "Highest cases in india"
+        }
+      ],
+      "description": "Which country have highest cases"
+    },
+    {
+      "intent": "vaccine",
+      "examples": [
+        {
+          "text": "what is our medical progress"
+        },
+        {
+          "text": "is there a vaccine for covid?"
+        },
+        {
+          "text": "what is corona vaccine"
+        },
+        {
+          "text": "how far have we come in fighting the pandemic"
+        },
+        {
+          "text": "can corona be cured"
+        },
+        {
+          "text": "is there any cure of it?"
+        },
+        {
+          "text": "is there a vaccine ?"
+        }
+      ],
+      "description": "about covid 19 virus vaccination and link to tracker"
+    },
+    {
+      "intent": "Thanku",
+      "examples": [
+        {
+          "text": "good one"
+        },
+        {
+          "text": "good results"
+        },
+        {
+          "text": "haha"
+        },
+        {
+          "text": "you are great"
+        },
+        {
+          "text": "great"
+        },
+        {
+          "text": "nice"
+        },
+        {
+          "text": "good"
+        }
+      ],
+      "description": "when someone applauses you"
+    },
+    {
+      "intent": "ChildrenSocializing",
+      "examples": [
+        {
+          "text": "Is social distancing important for kids too?"
+        },
+        {
+          "text": "While school is out can my child go to sports practice?"
+        },
+        {
+          "text": "Children socializing"
+        },
+        {
+          "text": "While school’s out, can my child hang out with their friends?"
+        },
+        {
+          "text": "do kids need to limit in person contact?"
+        },
+        {
+          "text": "Can my kid still go to group activities?"
+        }
+      ],
+      "description": "Child Socialization guidance"
+    },
+    {
+      "intent": "PMCARES",
+      "examples": [
+        {
+          "text": "who set up pmcare"
+        },
+        {
+          "text": "tell me about pm-cares"
+        },
+        {
+          "text": "what is PM CARES"
+        },
+        {
+          "text": "what is pmcares"
+        }
+      ],
+      "description": "about pmcares fund"
+    },
+    {
+      "intent": "Aatmnirbhar",
+      "examples": [
+        {
+          "text": "define aatmnirbhar"
+        },
+        {
+          "text": "atmanirbhar"
+        },
+        {
+          "text": "what do you mean by being aatmnirbhar"
+        },
+        {
+          "text": "are you aatmnirbhar"
+        },
+        {
+          "text": "are you in favour of aatmnirbharta"
+        },
+        {
+          "text": "do you support aatmnirbharta"
+        },
+        {
+          "text": "what is aatmnirbhar"
+        }
+      ],
+      "description": "say on modi's call of being aatmnirbhar"
+    },
+    {
+      "intent": "RiskToPets",
+      "examples": [
+        {
+          "text": "Is there any danger to pets?"
+        },
+        {
+          "text": "Risk to pets"
+        },
+        {
+          "text": "Should I be concerned about pets or other animals and COVID-19?"
+        },
+        {
+          "text": "Are my pets in risk?"
+        },
+        {
+          "text": "Can corona virus affect the pets?"
+        }
+      ],
+      "description": "Guidance on potential risk to Pets"
+    },
+    {
+      "intent": "CommunitySpread",
+      "examples": [
+        {
+          "text": "What is community spread?"
+        },
+        {
+          "text": "How does community spread happen? "
+        },
+        {
+          "text": "Can community spread happen? "
+        },
+        {
+          "text": "Community Spread"
+        },
+        {
+          "text": "Does  Corona Virus (COVID-19) spread to an entire community?"
+        },
+        {
+          "text": "What does that term community spread mean?"
+        },
+        {
+          "text": "Why is community spread of this virus important?"
+        }
+      ],
+      "description": "Defining Community Spread"
+    },
+    {
+      "intent": "Whythename",
+      "examples": [
+        {
+          "text": "Why is the disease being called coronavirus disease 2019, COVID-19?"
+        },
+        {
+          "text": "Why this name?"
+        },
+        {
+          "text": "why is the name given"
+        },
+        {
+          "text": "is covid an abbreviation?"
+        },
+        {
+          "text": "why is covid-19 the name for this disease?"
+        },
+        {
+          "text": "Why the name"
+        },
+        {
+          "text": "why was covid-19 used to name this disease?"
+        },
+        {
+          "text": "is corona virus the same as covid-19?"
+        }
+      ],
+      "description": "Answer how the name for this virus and disease arose."
+    },
+    {
+      "intent": "yourname",
+      "examples": [
+        {
+          "text": "who u?"
+        },
+        {
+          "text": "tell me about you"
+        },
+        {
+          "text": "What may i call you?"
+        },
+        {
+          "text": "what is your name?"
+        },
+        {
+          "text": "What is your name"
+        },
+        {
+          "text": "Who are you?"
+        },
+        {
+          "text": "Who are you"
+        }
+      ],
+      "description": "what is your name"
+    },
+    {
+      "intent": "Governmentwithcoronawarriors",
+      "examples": [
+        {
+          "text": "Government announcement for corona warriors"
+        },
+        {
+          "text": "Are corona warriors provided with protective equipments"
+        },
+        {
+          "text": "what if a corona warrior die on duty"
+        },
+        {
+          "text": "Different policies for corona warriors"
+        },
+        {
+          "text": "How indian government support corona warriors"
+        },
+        {
+          "text": "If any corona warriors get infected with corona what will government do"
+        },
+        {
+          "text": "What have governmentdone for corona warriors"
+        }
+      ],
+      "description": "How indian government support corona warriors"
+    },
+    {
+      "intent": "howmanytesting",
+      "examples": [
+        {
+          "text": "how many tests"
+        },
+        {
+          "text": "statisticts on tests"
+        },
+        {
+          "text": "tell me about the number of testing"
+        },
+        {
+          "text": "can you provide me with testing details"
+        },
+        {
+          "text": "How many testing done upto today?"
+        },
+        {
+          "text": "testing in India"
+        },
+        {
+          "text": "how many tests have been done?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "CDC_Response",
+      "examples": [
+        {
+          "text": "What is CDC doing about COVID-19?"
+        },
+        {
+          "text": "How is CDC helping Americans prepare?"
+        },
+        {
+          "text": "Does CDC work to protect public health?"
+        },
+        {
+          "text": "CDC response"
+        },
+        {
+          "text": "What is the center for disease control doing to help?"
+        }
+      ],
+      "description": "Info about the CDC"
+    },
+    {
+      "intent": "PrepareFamily",
+      "examples": [
+        {
+          "text": "should my household plan ahead?"
+        },
+        {
+          "text": "How can my family and I prepare for COVID-19?"
+        },
+        {
+          "text": "what goes into a family emergency plan?"
+        },
+        {
+          "text": "Prepare family"
+        },
+        {
+          "text": "how do I prepare my household in case corona virus hits my community?"
+        }
+      ],
+      "description": "Family Preparation Guidance"
+    },
+    {
+      "intent": "HigherRiskPopulations",
+      "examples": [
+        {
+          "text": "Higher risk populations"
+        },
+        {
+          "text": "Do seniors need to take extra precautions?"
+        },
+        {
+          "text": "How does this impact the elderly? "
+        },
+        {
+          "text": "I am over the age of 60."
+        },
+        {
+          "text": "I have a chronic illness."
+        },
+        {
+          "text": "I have underlying health issues."
+        },
+        {
+          "text": "What does immunocompromised mean? "
+        },
+        {
+          "text": "Who is at higher risk for serious illness from COVID-19?"
+        },
+        {
+          "text": "Why do Boomers get sick? "
+        },
+        {
+          "text": "Who is dying? "
+        },
+        {
+          "text": "Why are people with pre-existing conditions more at risk?"
+        },
+        {
+          "text": "Are all the old people going to die? "
+        },
+        {
+          "text": "Are older adults more likely to contract the disease?"
+        },
+        {
+          "text": "Can Gen-X get sick? "
+        },
+        {
+          "text": "Can Millennials get it? "
+        },
+        {
+          "text": "Does  Corona Virus (COVID-19) affect older people more?"
+        },
+        {
+          "text": "Does Gen-Y get it?"
+        },
+        {
+          "text": "How does it affect immunocompromised people? "
+        }
+      ],
+      "description": "Identify which populations are at higher risk"
+    },
+    {
+      "intent": "Effectivenenessoflockdown",
+      "examples": [
+        {
+          "text": "Can we call the lockdown as effective"
+        },
+        {
+          "text": "Is the lockdown in india effective"
+        },
+        {
+          "text": "How effective is lockdown"
+        },
+        {
+          "text": "has lockdown been effective in containing the virus"
+        },
+        {
+          "text": "Has lockdown bring down the corona growth rate"
+        }
+      ],
+      "description": "It tells about the effectiveness of the lockdown in india"
+    },
+    {
+      "intent": "donate",
+      "examples": [
+        {
+          "text": "where can i give my money for the needy"
+        },
+        {
+          "text": "i want to donate"
+        },
+        {
+          "text": "i want to help the needy persons"
+        },
+        {
+          "text": "how i can help the needy"
+        },
+        {
+          "text": "tell me a place to donate"
+        },
+        {
+          "text": "where can i donate"
+        },
+        {
+          "text": "how i can help people"
+        }
+      ],
+      "description": "who donate"
+    },
+    {
+      "intent": "Symptoms",
+      "examples": [
+        {
+          "text": "Symptoms"
+        },
+        {
+          "text": "is fever a sign of this infection?"
+        },
+        {
+          "text": "does covid-19 cause fever?"
+        },
+        {
+          "text": "What are the symptoms and complications that COVID-19 can cause?"
+        },
+        {
+          "text": "what symptoms should I watch for?"
+        },
+        {
+          "text": "does covid-19 cause coughing?"
+        }
+      ],
+      "description": "General info on symptoms of covid-19 disease"
+    },
+    {
+      "intent": "precausions",
+      "examples": [
+        {
+          "text": "precautions"
+        },
+        {
+          "text": "How to recover from corona"
+        },
+        {
+          "text": "what precautions can we take to be safe"
+        },
+        {
+          "text": "what sould i do to be safe"
+        },
+        {
+          "text": "how can i protect myself"
+        },
+        {
+          "text": "how to protect from corona?"
+        },
+        {
+          "text": "what are the general precautions for corona?"
+        },
+        {
+          "text": "How can i be safe"
+        }
+      ],
+      "description": "in general precausions to follow "
+    },
+    {
+      "intent": "How_many_cases",
+      "examples": [
+        {
+          "text": "How many cases so far?"
+        },
+        {
+          "text": "How many cases of corona virus has been detected?"
+        },
+        {
+          "text": "What are the stats on COVID-19?"
+        },
+        {
+          "text": "What is the stats on Corona Virus?"
+        },
+        {
+          "text": "How many cases have been reported so far"
+        },
+        {
+          "text": "can you provide me with corona cases patient details"
+        },
+        {
+          "text": "total cases of covid 19 pandemic"
+        },
+        {
+          "text": "How many cases of Covid 19 has been detected?"
+        },
+        {
+          "text": "How many cases of covid 19 have been detected?"
+        },
+        {
+          "text": "Total Cases so Far"
+        },
+        {
+          "text": "how many cases in rajasthan Udaipur"
+        },
+        {
+          "text": "number of deaths"
+        },
+        {
+          "text": "How many deaths"
+        },
+        {
+          "text": "Data in bangalore"
+        },
+        {
+          "text": "data of bangalore"
+        },
+        {
+          "text": "Total cases in Rajasthan"
+        },
+        {
+          "text": "Cases in @sys-location"
+        },
+        {
+          "text": "Status of"
+        },
+        {
+          "text": "cases in"
+        },
+        {
+          "text": "status of @sys-location"
+        },
+        {
+          "text": "Active corona patients"
+        }
+      ],
+      "description": "Stats on number of infections"
+    },
+    {
+      "intent": "warmerweather",
+      "examples": [
+        {
+          "text": "does it get less contagious in the summer?"
+        },
+        {
+          "text": "Will warm weather stop the outbreak of COVID-19?"
+        },
+        {
+          "text": "will the virus go away during warmer months?"
+        },
+        {
+          "text": "warmer weather"
+        },
+        {
+          "text": "i heard the spread will slow down in warmer months"
+        }
+      ],
+      "description": "Does warmer weather or summer weather have an effect on the virus or the pandemic"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "zip_code",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "@sys-number",
+          "patterns": [
+            "(\\b|\\s)\\d{5}(\\b|\\s)"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "location1",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Tamilnadu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "USA",
+          "synonyms": [
+            "US , america",
+            "America",
+            "us"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "MP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UP",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "banswara",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UK",
+          "synonyms": [
+            "uk",
+            "United Kingdom",
+            "britain",
+            "England"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bengaluru rural",
+          "synonyms": [
+            "Bengaluru Rural"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "bengaluru",
+          "synonyms": [
+            "Bengaluru"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "bangalore",
+          "synonyms": [
+            "Bangalore"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bengaluru urban",
+          "synonyms": [
+            "Bengaluru Urban"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kanpur",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "AP",
+          "synonyms": [
+            "H"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "IPL",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "IPL",
+          "synonyms": [
+            "ipl"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Indian primier League",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "school_type",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "grade school",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "middle school",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "college",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "preschool",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "high school",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "coronavirus",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "coronavirus",
+          "synonyms": [
+            "corona",
+            "virus check",
+            "virus",
+            "COVID-19",
+            "COVID",
+            "coronavirus",
+            "corona-virus",
+            "carona-virus",
+            "Carona",
+            "Korona",
+            "Korona-virus",
+            "COVID19",
+            "covid 19"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "reply",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "not now",
+            "not at this time",
+            "nope",
+            "i think not",
+            "dont think so",
+            "don't think so",
+            "definitely not"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "yep",
+            "you betcha",
+            "you bet",
+            "yes",
+            "yeah",
+            "why not",
+            "sure",
+            "please",
+            "ok",
+            "let's do it",
+            "go for it",
+            "definitely"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "landmark",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "grand central",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "empire state building",
+          "synonyms": [
+            "emprire state",
+            "empire state"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "times square",
+          "synonyms": [
+            "times sqaure",
+            "time square",
+            "time sqaure"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "Resourcetype",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Testing Lab",
+          "synonyms": [
+            "Testing facilities",
+            "Test centres",
+            "Testcentres",
+            "Testing labs"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Food",
+          "synonyms": [
+            "Community Kitchen"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hospitals",
+          "synonyms": [
+            "Hospital",
+            "Medical centre",
+            "Medical service"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "NGO",
+          "synonyms": [
+            "non profit organisation",
+            "non government organisations",
+            "Fundraisers",
+            "Accomodation",
+            "Food and shelter",
+            "Shelter",
+            "Helpers"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Police",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Government Helpline",
+          "synonyms": [
+            "helpline no.",
+            "helpline number"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Delivery Service",
+          "synonyms": [
+            "Food delivery"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-location",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "zone",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "green zone",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "orange zone",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "red zone",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "aatmnirbhar",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "aatmnirbhar",
+          "synonyms": [
+            "atmnirbhar"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mycountry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "India",
+          "synonyms": [
+            "our country",
+            "my country"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "phone",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "US Phone pattern",
+          "patterns": [
+            "(\\d{3})-(\\d{3})-(\\d{4})"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/web/sumitajmera06%40gmail.com_dev/default/coid.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "frame",
+      "title": "How Many Cases",
+      "parent": "node_4_1585096044203",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "api",
+            "state": "@sys-location",
+            "disambiguity": "@location1"
+          },
+          "result_variable": "summary"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#How_many_cases",
+      "dialog_node": "node_3_1585093908809"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1590054200654",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1590054200660",
+      "previous_sibling": "handler_3_1590054200660"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1590054200654",
+      "context": {
+        "location1": "@location1"
+      },
+      "conditions": "@location1",
+      "event_name": "input",
+      "dialog_node": "handler_3_1590054200660"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "upto date:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "$summary.result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "We try to maintain accurate results."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1589463940479",
+      "conditions": "$summary",
+      "dialog_node": "response_10_1589463967168",
+      "previous_sibling": "slot_3_1590054200654"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_1_1589463940479",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1589463970217",
+      "previous_sibling": "response_10_1589463967168"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1589463940479",
+      "variable": "$location1",
+      "dialog_node": "slot_3_1590054200654",
+      "previous_sibling": "slot_3_1589464060163"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1589463940479",
+      "variable": "$location",
+      "dialog_node": "slot_3_1589464060163"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "What location (Country/Country Code/US State) would you like the stats for?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_9_1585096776672",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1585096776761",
+      "previous_sibling": "handler_2_1585096776761"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1585096776672",
+      "context": {
+        "location": "@sys-location"
+      },
+      "conditions": "@sys-location",
+      "event_name": "input",
+      "dialog_node": "handler_2_1585096776761"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1590123299601",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1590123299618",
+      "previous_sibling": "handler_6_1590123299618"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1590123299601",
+      "context": {
+        "location": "@mycountry"
+      },
+      "conditions": "@mycountry",
+      "event_name": "input",
+      "dialog_node": "handler_6_1590123299618"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1590234795845",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1590234795877",
+      "previous_sibling": "handler_7_1590234795877"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1590234795845",
+      "context": {
+        "state": "@sys-location"
+      },
+      "conditions": "@sys-location",
+      "event_name": "input",
+      "dialog_node": "handler_7_1590234795877"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1590058870190",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1590058870222",
+      "previous_sibling": "handler_10_1590058870222"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1590058870190",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_10_1590058870222"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1589464060163",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1589464060182",
+      "previous_sibling": "handler_10_1589464060182"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1589464060163",
+      "context": {
+        "location": "@sys-location"
+      },
+      "conditions": "@sys-location",
+      "event_name": "input",
+      "dialog_node": "handler_10_1589464060182"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "I don't know the answer to that yet. But I am learning new things all the time."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_11749",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1585074744879",
+      "previous_sibling": "response_10_1585074743918"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "I don't know the answer to that yet. But you may look for these results i have searched :                                                         \n                                                                                         \n$webhook_result_2.result.                                                                                                                                                                                                                            \n                                                                                                                           \n                                                                                                                           \n Thank you I am a chatbot and training from your queries."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "parent": "node_11749",
+      "context": {},
+      "conditions": "$webhook_result_2",
+      "dialog_node": "response_10_1585074743918"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1590234816936",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1590234816942",
+      "previous_sibling": "handler_9_1590234816942"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1590234816936",
+      "context": {
+        "resource": "@Resourcetype"
+      },
+      "conditions": "@Resourcetype",
+      "event_name": "input",
+      "dialog_node": "handler_9_1590234816942"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Try again later."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1584976214871",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1584976331717",
+      "previous_sibling": "response_5_1584976331463"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_1.result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1584976214871",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_5_1584976331463"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "I could not find any thing "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1585093908809",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1585095664425",
+      "previous_sibling": "response_1_1585095663277"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1585093908809",
+      "variable": "$location1",
+      "dialog_node": "slot_7_1589629785149",
+      "previous_sibling": "slot_5_1589271521026"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This is all the confirmed cases I have found"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "$summary.result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1585093908809",
+      "conditions": "$summary",
+      "dialog_node": "response_1_1585095663277",
+      "previous_sibling": "node_4_1585096079466"
+    },
+    {
+      "type": "frame",
+      "title": "Location Info",
+      "parent": "node_3_1585093908809",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "api",
+            "location": "$location"
+          },
+          "result_variable": "location_stats"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@reply:yes",
+      "dialog_node": "node_4_1585096079466",
+      "previous_sibling": "slot_7_1589629785149"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1585093908809",
+      "variable": "$district",
+      "dialog_node": "slot_5_1589271521026"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "video": {},
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "If you develop symptoms such as fever, cough, and/or difficulty breathing, and have been in close contact with a person known to have COVID-19 or have recently traveled from an area with ongoing spread of COVID-19, stay home and call your healthcare provider. Older patients and individuals who have severe underlying medical conditions or are immuno compromised should contact their healthcare provider early, even if their illness is mild. If you have severe symptoms, such as persistent pain or pressure in the chest, new confusion or inability to arouse, or bluish lips of face, contact your healthcare provider or emergency room and seek care immediately. Your doctor will determine if you have signs and symptoms of COVID-19 and whether you should be tested."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ],
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "parent": "node_11777",
+      "context": {},
+      "conditions": "$summary",
+      "dialog_node": "response_3_1589359237949"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1589271521026",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1589271521031",
+      "previous_sibling": "handler_2_1589271521031"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1589271521026",
+      "context": {
+        "district": "@sys-location"
+      },
+      "conditions": "@sys-location",
+      "event_name": "input",
+      "dialog_node": "handler_2_1589271521031"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1590232907120",
+      "variable": "$resource",
+      "dialog_node": "slot_8_1590234816936",
+      "previous_sibling": "slot_5_1590234795845"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$webhook_result_4.result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "We try to provide the most authentic results. Please inform us of any discrepancy .                                                                                                                                                                       \n*Also the testing labs may not include testing facilities setup within hospital. Ask for Hospitals in seperate to know that.                             "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1590232907120",
+      "conditions": "$webhook_result_4",
+      "dialog_node": "response_9_1590232950137",
+      "previous_sibling": "slot_8_1590234816936"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Coronavirus Helpline Number for India Helpline Number: +91-11-23978046  Toll-free number: 1075  Email ID : ncov2019@gov.in and ncov2019@gmail.com"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1590232907120",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1590232951770",
+      "previous_sibling": "response_9_1590232950137"
+    },
+    {
+      "type": "slot",
+      "parent": "node_8_1590232907120",
+      "variable": "$state",
+      "dialog_node": "slot_5_1590234795845"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "I could not find any information on that."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1585096079466",
+      "conditions": "anything_else",
+      "dialog_node": "response_3_1585096899249",
+      "previous_sibling": "response_9_1585096897994"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_4_1585096079466",
+      "variable": "$location",
+      "dialog_node": "slot_9_1585096776672",
+      "previous_sibling": "response_3_1585096899249"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here are the stats for <?$location?> "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "$location_stats.result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1585096079466",
+      "conditions": "$location_stats",
+      "dialog_node": "response_9_1585096897994"
+    },
+    {
+      "type": "standard",
+      "title": "node_11790",
+      "output": {},
+      "parent": "node_11788",
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_11749"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_11790",
+      "previous_sibling": "node_11789"
+    },
+    {
+      "type": "standard",
+      "title": "node_11789",
+      "output": {},
+      "parent": "node_11788",
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_11748"
+      },
+      "conditions": "input.text == '' && !input.button",
+      "dialog_node": "node_11789"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The stats are:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "$webhook_result_3.result"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1589439770572",
+      "conditions": "$webhook_result_3",
+      "dialog_node": "response_2_1589439805800",
+      "previous_sibling": "slot_4_1590123299601"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1589439770572",
+      "variable": "$location",
+      "dialog_node": "slot_4_1590123299601",
+      "previous_sibling": "slot_2_1590058870190"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_6_1589439770572",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1589439808379",
+      "previous_sibling": "response_2_1589439805800"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1589439770572",
+      "variable": "$number",
+      "dialog_node": "slot_2_1590058870190"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1589629785149",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1589629785157",
+      "previous_sibling": "handler_9_1589629785157"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1589629785149",
+      "context": {
+        "location1": "@location1"
+      },
+      "conditions": "@location1",
+      "event_name": "input",
+      "dialog_node": "handler_9_1589629785157"
+    },
+    {
+      "type": "standard",
+      "title": "how testing",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "There are different types of coronavirus tests that can be done: \n\nSwab Test – In this case, a special swab is used to take a sample from your nose or throat\nNasal aspirate – In this case, a saline solution will be injected into your nose and, then a sample is taken with a light suction\nTracheal aspirate – In this case, a thin tube with a torch, also known as a bronchoscope, is put into your mouth to reach your lungs from where a sample is collected. \nSputum Test – Sputum is thick mucus that gets accumulated in the lungs and comes out with a cough. During this test, you’re required to cough up sputum in a special cup or a swab is used to take a sample from your nose. \nBlood test – In this case, a blood sample is taken from a vein in the arm. \nA rapid test has also been started for the COVID-19, which involves taking samples from the nose, throat, and lungs. This ensures a speedy, and accurate diagnosis and is used in all CDC-approved. \nThere is another test that is going on these days, \"Antibody test\" , it test for antibodies present in the body of person and identifies if the person is infected from Covid-19 or not\"."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#howtesting",
+      "dialog_node": "node_2_1589443683473",
+      "previous_sibling": "node_1_1589457621849"
+    },
+    {
+      "type": "standard",
+      "title": "Latest News on Covid19",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "nonapi"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#News_Corona_Virus",
+      "dialog_node": "node_2_1584976214871",
+      "previous_sibling": "node_4_1585096044203"
+    },
+    {
+      "type": "standard",
+      "title": "Asymptomatic",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yes, corona can be in a healthy looking person also."
+              },
+              {
+                "text": "Ya surely It can be present in anyone"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "There are many peoples who have corona and do not show symptoms.                                                                                                                      Beware I might be infected too.\n<a><img src=\"https://media.giphy.com/media/l2JHS7po8pGz94TgQ/giphy.gif\" alt=\"just kidding \" style=\"width: 250px; height: 250px \"/></a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Hey, just joking , i am a mere bot how can i? :P                                                                                                   \n\nJust be aware of your sorrounding and maintain social distancing."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Asymptomatic",
+      "dialog_node": "node_2_1589871472622",
+      "previous_sibling": "node_7_1589872488706"
+    },
+    {
+      "type": "standard",
+      "title": "School Closing Information",
+      "output": {
+        "text": {
+          "values": [
+            "Depending on the situation, public health officials may recommend community actions to reduce exposures to COVID-19, such as school dismissals. Read or watch local media sources that report school dismissals or and watch for communication from your child’s school. If schools are dismissed temporarily, discourage students and staff from gathering or socializing anywhere, like at a friend’s house, a favorite restaurant, or the local shopping mall."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#schoolclosing && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11774",
+      "previous_sibling": "node_11773"
+    },
+    {
+      "type": "standard",
+      "title": "CDC Guidance and Response",
+      "output": {
+        "text": {
+          "values": [
+            "This is an emerging, rapidly evolving situation and CDC will continue to provide updated information as it becomes available. CDC works 24/7 to protect people’s health.  For CDC guidance please visit: https://www.cdc.gov/coronavirus/2019-nCoV/index.html"
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#CDC_Response && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11782",
+      "previous_sibling": "node_11781"
+    },
+    {
+      "type": "standard",
+      "title": "Negative Test Result Considerations",
+      "output": {
+        "text": {
+          "values": [
+            "Using the CDC-developed diagnostic test, a negative result means that the virus that causes COVID-19 was not found in the person’s sample. In the early stages of infection, it is possible the virus will not be detected. For COVID-19, a negative test result for a sample collected while a person has symptoms likely means that the COVID-19 virus is not causing their current illness."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#NegativeTestResults && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11778",
+      "previous_sibling": "node_1_1589463940479"
+    },
+    {
+      "type": "standard",
+      "title": "Student and School Meals",
+      "output": {
+        "text": {
+          "values": [
+            "Check with your school on plans to continue meal services during the school dismissal. Many schools are keeping school facilities open to allow families to pick up meals or are providing grab-and-go meals at a central location."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#MealsForStudents && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11787",
+      "previous_sibling": "node_11786"
+    },
+    {
+      "type": "standard",
+      "title": "Info about Stigmatized Groups",
+      "output": {
+        "text": {
+          "values": [
+            "People all around the world. may be worried or anxious about friends and relatives who are living in or visiting areas where COVID-19 is spreading. Some people are worried about the disease. Fear and anxiety can lead to social stigma, for example, towards Chinese or other Asian Americans or people who were in quarantine. Stigma is discrimination against an identifiable group of people, a place, or a nation. Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to blame someone, fears about disease and death, and gossip that spreads rumors and myths. Stigma hurts everyone by creating more fear or anger towards ordinary people instead of the disease that is causing the problem."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#Stigmatizedgroups && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11779",
+      "previous_sibling": "node_11778"
+    },
+    {
+      "type": "standard",
+      "title": "gereral precausion ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "To prevent the spread of COVID-19:\n->Clean your hands often. Use soap and water or an alcohol-based hand rub.\n->Maintain a safe distance from anyone who is coughing or sneezing.\n\n<a><img src=\"https://media1.giphy.com/media/lRijoaJYDzQ7fGkqTr/200w.webp?cid=ecf05e47656ac1a2fbb215c9293c88f4a304df6ae9fa9c3a&rid=200w.webp\" alt=\"  \" style=\"width: 250px; height: 250px \"/></a>\n->Don’t touch your eyes, nose, or mouth.\n->Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.\n<a><img src=\"https://media3.giphy.com/media/H4JOnUipCV9l98sXEW/200w.webp?cid=ecf05e47bcdb1ce9fd4a5402d81045ea4af8b92fbc39eed0&rid=200w.webp\" alt=\"pretty much a dab  \" style=\"width: 250px; height: 250px \"/></a>\nya like that\n->Stay home if you feel unwell.\n->If you have a fever, cough, and difficulty breathing, seek medical attention. Call in advance.\n->Follow the directions of your local health authority."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#precausions",
+      "dialog_node": "node_10_1589869687609",
+      "previous_sibling": "node_6_1589871437212"
+    },
+    {
+      "type": "standard",
+      "title": "Hotspots",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A covid-19 Hotspot is an area with a high number of active cases of this pandemic. In the starting China started of a global hotspot then many countries got effected from this severe disease."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Recently , USA is the world largest hotspot and India is becoming the asia's largest hotspot for corona.                                                                             In india states like Maharashtra ,Gujarat, Tamil Nadu and Delhi are the hotspot states.                                                                                                      "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#hotspot",
+      "dialog_node": "node_6_1589701803582",
+      "previous_sibling": "node_6_1589703659610"
+    },
+    {
+      "type": "standard",
+      "title": "vaccination ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A COVID-19 vaccine is a hypothetical vaccine against coronavirus disease 2019 (COVID‑19). \nAlthough no vaccine has completed clinical trials, there are multiple attempts in progress to develop such a vaccine. \nIn February 2020, the World Health Organization (WHO) said it did not expect a vaccine against severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), the causative virus, to become available in less than 18 months. \n On 4 May 2020, the WHO announced the deployment of an international \"Solidarity trial\" for simultaneous evaluation of several vaccine candidates reaching Phase II-III clinical trials (the phase where the vaccine will be tested on hundreds to thousands of patients).\nBy May, 120 vaccine candidates were in development."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Given below is a link to the COVID-19 vaccine tracker. You might want to check it out as well.\nclick <a  target=\"_blank\" href=\"https://milkeninstitute.org/covid-19-tracker\">Tracker</a>.<br/><br/>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#vaccine",
+      "dialog_node": "node_1_1589457621849",
+      "previous_sibling": "node_5_1589532259950"
+    },
+    {
+      "type": "standard",
+      "title": "Testing Information",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "test"
+          },
+          "result_variable": "summary"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Testing",
+      "dialog_node": "node_11777",
+      "previous_sibling": "node_11776"
+    },
+    {
+      "type": "standard",
+      "title": "node_11749",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_11749",
+      "previous_sibling": "node_11750"
+    },
+    {
+      "type": "standard",
+      "title": "What symptoms are shown in Children?",
+      "output": {
+        "text": {
+          "values": [
+            "The symptoms of COVID-19 are similar in children and adults. However, children with confirmed COVID-19 have generally presented with mild symptoms. Reported symptoms in children include cold-like symptoms, such as fever, runny nose, and cough. Vomiting and diarrhea have also been reported. It’s not known yet whether some children may be at higher risk for severe illness, for example, children with underlying medical conditions and special healthcare needs. There is much more to be learned about how the disease impacts children."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#Symptomsinchildren && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11766",
+      "previous_sibling": "node_11765"
+    },
+    {
+      "type": "standard",
+      "title": "Symptoms of COVID19",
+      "output": {
+        "video": {},
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Current symptoms reported for patients with COVID-19 have included mild to severe respiratory illness with fever , cough, and difficulty breathing."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Initial studies suggest that it may take even around 2 weeks time for the symptoms to start showing in an infectious person."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ],
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#Symptoms && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11776",
+      "previous_sibling": "node_11775"
+    },
+    {
+      "type": "standard",
+      "title": "corona_suspected",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "If you develop symptoms such as fever, cough, and/or difficulty breathing, and have been in close contact with a person known to have COVID-19 or have recently traveled from an area with ongoing spread of COVID-19, stay home and call your healthcare provider. Older patients and individuals who have severe underlying medical conditions or are immuno compromised should contact their healthcare provider early, even if their illness is mild. If you have severe symptoms, such as persistent pain or pressure in the chest, new confusion or inability to arouse, or bluish lips of face, contact your healthcare provider or emergency room and seek care immediately. Your doctor will determine if you have signs and symptoms of COVID-19 and whether you should be tested."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Maintaing social distancing from everyone around you and isolate yourself. safegaurd your family and other people from this disease. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Most people recover from this disease if you take precautionary steps and follow doctoral advice, you would be healthy soon be optimistic."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#coronapositive",
+      "dialog_node": "node_7_1589544248134",
+      "previous_sibling": "node_3_1589545903503"
+    },
+    {
+      "type": "folder",
+      "title": "api",
+      "dialog_node": "node_4_1585096044203",
+      "previous_sibling": "node_11791"
+    },
+    {
+      "type": "standard",
+      "title": "Disinfecting Surfaces",
+      "output": {
+        "text": {
+          "values": [
+            "Clean and disinfect frequently touched surfaces such as tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks. If surfaces are dirty, clean them using detergent or soap and water prior to disinfection. To disinfect, most common EPA-registered household disinfectants will work."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#DisinfectingSurfaces && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11772",
+      "previous_sibling": "node_11771"
+    },
+    {
+      "type": "standard",
+      "title": "why it is pandemic",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The World Health Organization (WHO) on March 11, 2020, has declared the novel coronavirus (COVID-19) outbreak a global pandemic.\nAt a news briefing , WHO Director-General, Dr. Tedros Adhanom Ghebreyesus, noted that over the past 2 weeks, the number of cases outside China increased 13-fold and the number of countries with cases increased threefold. Further increases are expected.\nDue to the rapid growth in the newly introduced virus cases WHO termed it as one of the greatest pandemic that world is facing.\nOther examples of pandemic are-\nspanish flu(1918) , Asian flu(1957-58) , Hongkong Flu(1968)etc."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#pandemic",
+      "dialog_node": "node_3_1589534078327",
+      "previous_sibling": "node_7_1589544248134"
+    },
+    {
+      "type": "standard",
+      "title": "Info on  lockdown",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "On 24 March 2020, the Government of India under Prime Minister Narendra Modi ordered a nationwide lockdown for 21 days. It was ordered after a 14-hour voluntary public curfew on 22 March, followed by enforcement of a series of regulations in the country's COVID-19 affected regions."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "14 April,  the nationwide lockdown was extended with a conditional relaxation after 20 April for the regions where the spread had been contained."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "On 1 May, the Government of India extended the nationwide lockdown further by two weeks and divided the entire nation into three zones—green, red, and orange—with relaxations applied accordingly.\nNow at present the Lockdown is upto 31st May.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Now it is up to the government to remove lockdown or increase. we can just say STAY HOME STAY SAFE.\nand relax ;)\n<a><img src=\"https://media.giphy.com/media/12NVOuOQ8CYSf6/giphy.gif\" alt=\"lockdown \" style=\"width: 250px; height: 250px \"/></a>\n\n<a><img src=\"https://i.imgur.com/K2igXB1.gif\" alt=\"lockdown \" style=\"width: 250px; height: 250px \"/></a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "For Zone related information ask In which zone is {your distrct name},                                                                                                               if you want to know which activities are allowed under which zone ask which activities are allowed during lockdown."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Lockdown",
+      "dialog_node": "node_1_1589612271302",
+      "previous_sibling": "node_3_1589613439655"
+    },
+    {
+      "type": "standard",
+      "title": "What is Covid19?",
+      "output": {
+        "video": {},
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\n<a><img src=\"https://media3.giphy.com/media/YPhuwt9pV2XLM2HIq4/giphy.gif?cid=ecf05e477f6ac128c947a566a3ceb5035f083dd6d5f1d232&rid=giphy.gif\" alt=\"status -- aatmnirbhar \" style=\"width: 250px; height: 250px \"/></a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the coronaviruses that commonly circulate among humans and cause mild illness, like the common cold and mild to moderate respiratory illness. Most people recover without requiring special treatment. while in other cases it can be deadly."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ],
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#WhatisCovid && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11751",
+      "previous_sibling": "node_2_1584976214871"
+    },
+    {
+      "type": "standard",
+      "title": "Where did it originate?",
+      "output": {
+        "text": {
+          "values": [
+            "Coronaviruses are a large family of viruses. Some cause illness in people, and others, such as canine and feline coronaviruses, only infect animals. Rarely, animal coronaviruses that infect animals have emerged to infect people and can spread between people. This is suspected to have occurred for the virus that causes COVID-19. Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS) are two other examples of coronaviruses that originated from animals and then spread to people. More information about the source and spread of COVID-19 ask this chatbot how does the virus spread."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#Wherediditstart && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11754",
+      "previous_sibling": "node_11753"
+    },
+    {
+      "type": "standard",
+      "title": "ppe",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "PPE is  Personal Protective Equipment, which is used by people in direct contact with virus-infected individuals.\nIndia's demand for PPE kits is 2.01 crore.\n\nIndia has already placed orders for 2.22 crore kits, including 1.42 crore kits from domestic manufacturers.\nit is asserted that 1.87 lakh kits are being produced daily in the country adding that the PPE market has quickly become a Rs. 7,000-crore industry in India.\nAccording to a recent public addressing by PM Modi india have a capacity of procurring 2 lakhs PPE kits per day.\n\nIndia could export PPEs in the future.a"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ppe",
+      "dialog_node": "node_1_1589648474209",
+      "previous_sibling": "node_7_1589650401478"
+    },
+    {
+      "type": "standard",
+      "title": "Children and Face Masks",
+      "output": {
+        "text": {
+          "values": [
+            "If your child is healthy, there is no need for them to wear a facemask. Only people who have symptoms of illness or who are providing care to those who are ill should wear masks.                                      But make sure to cover his/her face by any type of mask available in common public places."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#ChildrenAndFaceMasks && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11767",
+      "previous_sibling": "node_11766"
+    },
+    {
+      "type": "standard",
+      "title": "AAtmnirbhar india",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Honourable Prime Minister of India Sh. Narendra Modi urged the nation to be aatmnirbhar. Aatmnirbhar means being self dependent.            \nHe asked the indigenous product brands and companies to stood up and make the country aatmnirbhar. His call represented a vivid message for the development of India and a vivid vision of country's growth in future. He called out for people to make India the global leader in this 21st century."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Actually i am also aatmnirbhar as i can answer your many queries and ya i am making india aatnirbhar  because my creator are Indians and we support \"Make In India. and AATMNIRBHARTA\"                                                                                    \nLet us make ourselves aatmnirbhar. \"AATMNIRBHAR-INDIA\"\n<a><img src=\"https://i.pinimg.com/originals/16/84/12/16841298eef8364680194e3433f522b4.png\" alt=\"status -- aatmnirbhar \" style=\"width: 250px; height: 250px \"/></a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Aatmnirbhar",
+      "dialog_node": "node_7_1589872488706",
+      "previous_sibling": "node_7_1589919840125"
+    },
+    {
+      "type": "standard",
+      "title": "Products and Packages from China",
+      "output": {
+        "text": {
+          "values": [
+            "There is still a lot that is unknown about the newly emerged COVID-19 and how it spreads. Two other coronaviruses have emerged previously to cause severe illness in people (MERS-CoV and SARS-CoV). The virus that causes COVID-19 is more genetically related to SARS-CoV than MERS-CoV, but both are betacoronaviruses with their origins in bats. While we don’t know for sure that this virus will behave the same way as SARS-CoV and MERS-CoV, we can use the information gained from both of these earlier coronaviruses to guide us. In general, because of poor survivability of these coronaviruses on surfaces, there is likely very low risk of spread from products or packaging that are shipped over a period of days or weeks at ambient temperatures. Coronaviruses are generally thought to be spread most often by respiratory droplets. Currently there is no evidence to support transmission of COVID-19 associated with imported goods and there have not been any cases of COVID-19 in the United States associated with imported goods. Information will be provided on the Coronavirus Disease 2019 (COVID-19) website as it becomes available."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#ProductsFromChina && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11763",
+      "previous_sibling": "node_11762"
+    },
+    {
+      "type": "standard",
+      "title": "thanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you, we strive for your support and more improvement in our services."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Thanku",
+      "dialog_node": "node_6_1589793868428",
+      "previous_sibling": "node_10_1589869687609"
+    },
+    {
+      "type": "standard",
+      "title": "Reduce Family Risk",
+      "output": {
+        "text": {
+          "values": [
+            "Practice everyday preventive actions to help reduce your risk of getting sick and remind everyone in your home to do the same. These actions are especially important for older adults and people who have severe chronic medical conditions: Avoid close contact with people who are sick. Cover your coughs and sneezes with a tissue and throw the tissue in the trash. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol. Always wash hands with soap and water if hands are visibly dirty. Clean and disinfect frequently touched surfaces and objects (e.g., tables, countertops, light switches, doorknobs, and cabinet handles)."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#ReduceFamilyRisk && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11769",
+      "previous_sibling": "node_11768"
+    },
+    {
+      "type": "standard",
+      "title": "government response for corona warriors",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "While covid warriors are the frontline of india's fight against the covid-19 pandemic, Government of India is also supporting them a lot. Apart from many states announcing insurance for the covid19 health workers Foreign ministry has also announced a 50Lakh for insurance cover for all the covid warriors in india.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "This policy includes an insurance cover for 22 lakhs health care workers."
+              },
+              {
+                "text": "FM said, “It is for them (frontline warriors) we want to attempt first not forgetting the risks they’re putting themselves to in dealing with patient affected by coronavirus.”\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Apart from financial packages, Indian Army, Navy and Airforce have also paid their tribute to the corona warriors on 3rd May. The armed forces have made elaborate arrangements to conduct aerial fly-pasts, light up ships at sea and shower flower petals on several hospitals across the country on Sunday to express gratitude to lakhs of doctors, paramedics, sanitation staff and other front-line workers engaged in fighting the coronavirus pandemic."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Governmentwithcoronawarriors",
+      "dialog_node": "node_5_1589716233618",
+      "previous_sibling": "node_10_1589708553440"
+    },
+    {
+      "type": "standard",
+      "title": "PM-cares",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Prime Minister's Citizen Assistance and Relief in Emergency Situations Fund (PM CARES Fund) was created on 28 March 2020, following the COVID-19 pandemic in India. The fund will be used for combating, containment and relief efforts against the coronavirus outbreak and similar pandemic like situations in the future.\nyou can view more information regarding the PM-CARES fund by this link-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#PMCARES",
+      "dialog_node": "node_2_1589555602770",
+      "previous_sibling": "node_1_1589612271302"
+    },
+    {
+      "type": "standard",
+      "title": "Warmer Weather Mitigation",
+      "output": {
+        "text": {
+          "values": [
+            "It is not yet known whether weather and temperature impact the spread of COVID-19. Some other viruses, like the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months. At this time, it is not known whether the spread of COVID-19 will decrease when weather becomes warmer. There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#warmerweather && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11758",
+      "previous_sibling": "node_11757"
+    },
+    {
+      "type": "standard",
+      "title": "Risk to Pets",
+      "output": {
+        "text": {
+          "values": [
+            "While this virus seems to have emerged from an animal source, it is now spreading from person-to-person. There is no reason to think that any animals including pets in the United States might be a source of infection with this new coronavirus. To date, CDC has not received any reports of pets or other animals becoming sick with COVID-19. At this time, there is no evidence that companion animals including pets can spread COVID-19. However, since animals can spread other diseases to people, it’s always a good idea to wash your hands after being around animals."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#RiskToPets && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11783",
+      "previous_sibling": "node_11782"
+    },
+    {
+      "type": "frame",
+      "title": "howmanytests",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "test",
+            "state": "@sys-location",
+            "disambiguity": "@location1"
+          },
+          "result_variable": "summary"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#howmanytesting",
+      "dialog_node": "node_1_1589463940479",
+      "previous_sibling": "node_11777"
+    },
+    {
+      "type": "standard",
+      "title": "IPL",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The 2020 Indian Premier League, also known as IPL 13 and officially known as Vivo IPL, was scheduled to commence on 29 March 2020.                                                                                                               But due to major outbreak of corona virus in India , it is postponed indefinitely.\nBoard of Cricket Commission of India(BCCI) the governing body of IPL i strying all its effort regarding the resumption of this massive scale mega tournament. In recent stories it is a possibility that it may resume in october or september 2020.                                       IPL is a major part of revnue for BCCI and in a recent statement BCCI said  that They are set to loose 4000 Crores INR if the IPL is cancelled this year"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#IPLstart",
+      "dialog_node": "node_6_1589703659610",
+      "previous_sibling": "node_5_1589716233618"
+    },
+    {
+      "type": "standard",
+      "title": "Guidance on going in to work",
+      "output": {
+        "text": {
+          "values": [
+            "Follow the advice of your local health officials. Stay home if you can. Talk to your employer to discuss working from home, taking leave if you or someone in your household gets sick with COVID-19 symptoms , or if your child’s school is dismissed temporarily. Employers should be aware that more employees may need to stay at home to care for sick children or other sick family members than is usual in case of a community outbreak."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#ReportingToWork && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11775",
+      "previous_sibling": "node_11774"
+    },
+    {
+      "type": "standard",
+      "title": "#Set confidence thresholds",
+      "output": {},
+      "context": {
+        "out_of_bounds": 0.2,
+        "low_confidence": 0.4
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_11789"
+      },
+      "conditions": "conversation_start",
+      "dialog_node": "node_11788",
+      "previous_sibling": "node_8_1589388783934"
+    },
+    {
+      "type": "standard",
+      "title": "Can I attend funerals?",
+      "output": {
+        "text": {
+          "values": [
+            "There is currently no known risk associated with being in the same room at a funeral or visitation service with the body of someone who died of COVID-19."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#AttendingFuneral && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11781",
+      "previous_sibling": "node_11780"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbye",
+      "output": {
+        "video": {},
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Farewell!"
+              },
+              {
+                "text": "Take Care"
+              },
+              {
+                "text": "Stay Safe Out There"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "\n<a><img src=\"https://media.giphy.com/media/dvsQt2qh45tVl6YipK/giphy.gif\" alt=\"status -- aatmnirbhar \" style=\"width: 250px; height: 250px \"/></a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ],
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "#goodbyes && intents[0].confidence > 0.95",
+      "dialog_node": "node_11791",
+      "previous_sibling": "node_11748"
+    },
+    {
+      "type": "standard",
+      "title": "Data Disclaimer",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This bot is populated with data sourced from the following resources:\n\nMost static responses provide information found on the CDC's Covid FAQ Page: https://www.cdc.gov/coronavirus/2019-ncov/faq.html\n\nDynamic infection and death counts are sourced from trusted api's and sources.\n\nDynamic news stories are sourced from Watson Discovery's news feed. Additional information on that service can be found here: https://www.ibm.com/watson/services/discovery-news/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "(#DataSource && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_8_1585238958758",
+      "previous_sibling": "node_11787"
+    },
+    {
+      "type": "standard",
+      "title": "comorbidity ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Comorbidity means that a person is previously suffering from a serious illness. It includes disease such as HIV, Diabetes , High blood pressure, cancel , Hyper Tension etc.                                                             \n\nDue to these previous illness the immunity of such people become weak.  Weak immune people are more prone to corona as the virus reaches the lungs and they feel problem in breathing. So, comorbid peoples are more prone to Corona disease."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#comorbid_condition",
+      "dialog_node": "node_6_1590050770043",
+      "previous_sibling": "node_8_1590232907120"
+    },
+    {
+      "type": "standard",
+      "title": "Naming of Virus",
+      "output": {
+        "text": {
+          "values": [
+            "On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The new name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”. There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused be a novel (or new) coronavirus that has not previously been seen in humans. The name of this disease was selected following the World Health Organization (WHO) best practice for naming of new human infectious diseases."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#Whythename && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11752",
+      "previous_sibling": "node_11751"
+    },
+    {
+      "type": "standard",
+      "title": "who created the bot",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I have been developed by a group of crazy peoples sitting in their home, bored due to the lockdown."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "They are team saviour 19"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://avatars3.githubusercontent.com/u/65216251?s=200&v=4",
+            "response_type": "image"
+          }
+        ]
+      },
+      "conditions": "#whocreatedu",
+      "dialog_node": "node_5_1589532259950",
+      "previous_sibling": "node_3_1589534078327"
+    },
+    {
+      "type": "standard",
+      "title": "Handwashing tips and Guidance",
+      "output": {
+        "text": {
+          "values": [
+            "Hand washing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#HandwashingTips && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11771",
+      "previous_sibling": "node_11770"
+    },
+    {
+      "type": "standard",
+      "title": "Health Dept Recommended Actions",
+      "output": {
+        "text": {
+          "values": [
+            "For recommendations and guidance on persons under investigation; infection control, including personal protective equipment guidance; home care and isolation; and case investigation, ask this chatbot about Information for Healthcare Professionals . For information on specimen collection and shipment, ask this chatbot about Information for Laboratories. For information for public health professional on COVID-19, ask this chatbot about Information for Public Health Professionals."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#HealthDeptRecommendedActions && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11780",
+      "previous_sibling": "node_11779"
+    },
+    {
+      "type": "standard",
+      "title": "node_11750",
+      "output": {
+        "text": {
+          "values": [
+            "Did you mean:",
+            "You seem to be asking about: ",
+            "I think you were asking about:"
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "buttons": [
+          {
+            "id": "<? intents.?[intent != 'greeting' && intent != 'goodbyes'  && intent != 'nonsense' && intent != 'no' && intent != 'yes' && intent != 'weather'][0].intent ?>"
+          },
+          {
+            "id": "<? intents.?[intent != 'greeting' && intent != 'goodbyes'  && intent != 'nonsense' && intent != 'no' && intent != 'yes' && intent != 'weather'][1].intent ?>"
+          },
+          {
+            "id": "<? intents.?[intent != 'greeting' && intent != 'goodbyes'  && intent != 'nonsense' && intent != 'no' && intent != 'yes' && intent != 'weather'][2].intent ?>"
+          }
+        ],
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "intents.size() > 0 && (intents[0].confidence < $low_confidence && intents[0].confidence > $out_of_bounds)",
+      "dialog_node": "node_11750",
+      "previous_sibling": "node_8_1585238958758"
+    },
+    {
+      "type": "standard",
+      "title": "economic_statistics",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<a href=\"https://www.statista.com/statistics/1107798/india-estimated-economic-impact-of-coronavirus-by-sector/\" rel=\"nofollow\"><img src=\"https://www.statista.com/graphic/1/1107798/india-estimated-economic-impact-of-coronavirus-by-sector.jpg\" alt=\"Statistic: Estimated impact from the coronavirus (COVID-19) on India between April and June 2020, by sector GVA | Statista\" style=\"width: 100%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;\"/></a><br />Find more statistics at  <a href=\"https://www.statista.com/statistics/1107798/india-estimated-economic-impact-of-coronavirus-by-sector/\" rel=\"nofollow\">Statista</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#eco_stats",
+      "dialog_node": "node_7_1589650401478",
+      "previous_sibling": "node_9_1589700761079"
+    },
+    {
+      "type": "standard",
+      "title": "deadly corona",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Coronaviruses typically affect the respiratory system, causing symptoms such as coughing and shortness of breath. Some people, including older adults, are at risk of severe illness from these viruses."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "A virus infects your body by entering healthy cells. There, the invader makes copies of itself and multiplies throughout your body.\n\nThe new coronavirus latches its spiky surface proteins to receptors on healthy cells, especially those in your lungs."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "It mostly effects the lungs and reduces their action. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "It can cause many implication and even death if the person has past low immune system. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "For a detailed process please checkout this -                                                               https://www.medicalnewstoday.com/articles/covid-19-what-happens-inside-the-body#Phase-1:Cellinvasion-andviralreplicationin-thenose"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#effect_of_corona",
+      "dialog_node": "node_7_1589919840125",
+      "previous_sibling": "node_6_1590050770043"
+    },
+    {
+      "type": "standard",
+      "title": "corona_get_over",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "There is a huge uncertainity regarding the end of corona in the near future. It have disrupted millions of life and brought down almost all country growth to stillness\n Here's Why A Coronavirus Vaccine Might Not Happen Within 18 Months\n“One of the problems with corona vaccines in the past has been that when the immune response does cross over to where the virus-infected cells are it actually increases the pathology rather than reducing it,” said Frazer.                                                                                                                                      For more information regarding vaccines ask about vaccine to me.                                                                                                                                  For now just maintain proper care and help world fight this pandemic."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#whenwewillgetrid",
+      "dialog_node": "node_9_1589700761079",
+      "previous_sibling": "node_6_1589701803582"
+    },
+    {
+      "type": "standard",
+      "title": "masks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "It is advised to use N-95 or N-99 masks. \nAccording to PM Narendra Modi India has increased its production capacity for face masks to 2.3 lakh per day.\n\nIndia's projected demand for N-95 and N-99 masks is 2.7 crore and 2.5 crores have already been produced, he said.\n\nOut of the 2.5 crore masks, 1.5 crores were indigenously manufactured, he add"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#masks",
+      "dialog_node": "node_6_1589639214933",
+      "previous_sibling": "node_1_1589648474209"
+    },
+    {
+      "type": "standard",
+      "title": "Higher Risk Populations",
+      "output": {
+        "text": {
+          "values": [
+            "Older adults and people of any age who have serious underlying medical conditions may be at higher risk for more serious complications from COVID-19. Based upon available information to date, those most at risk include People 65 years and older, People who live in a nursing home or long-term care facility, People of any age with the following underlying medical conditions, particularly those that are not well controlled, Chronic lung disease or asthma, Congestive heart failure or coronary artery disease, Diabetes, Neurological conditions that weaken ability to cough, Weakened immune system, Chemotherapy or radiation for cancer (currently or in recent past), Sickle cell anemia, Chronic kidney disease requiring dialysis, Cirrhosis of the liver, Lack of spleen or a spleen that doesn’t function correctly, Extreme obesity (body mass index [BMI] > 40), People who are pregnant."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#HigherRiskPopulations && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11761",
+      "previous_sibling": "node_11759"
+    },
+    {
+      "type": "standard",
+      "title": "donate",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The World Health Organization (WHO) is leading and coordinating the global effort, supporting countries to prevent, detect, and respond to the pandemic.\n\nEveryone can now support directly the response coordinated by WHO. People and organizations who want to help fight the pandemic and support WHO and partners can now donate through the COVID-Solidarity Response Fund for WHO at www.COVID19ResponseFund.org."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "click <a  target=\"_blank\" href=\"https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate\">here</a>  to go to the World Health Organization donation site."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "The Prime Minister's Citizen Assistance and Relief in Emergency Situations Fund (PM CARES Fund) was created on 28 March 2020, following the COVID-19 pandemic in India. The fund will be used for combating, containment and relief efforts against the coronavirus outbreak and similar pandemic like situations in the future.\nyou can view more information regarding the PM-CARES fund by this link-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "https://www.pmcares.gov.in/en/"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#donate",
+      "dialog_node": "node_3_1589545903503",
+      "previous_sibling": "node_2_1589555602770"
+    },
+    {
+      "type": "standard",
+      "title": "What is Quarantine",
+      "output": {
+        "text": {
+          "values": [
+            "Quarantine means separating a person or group of people who have been exposed to a contagious disease but have not developed illness (symptoms) from others who have not been exposed, in order to prevent the possible spread of that disease. Quarantine is usually established for the incubation period of the communicable disease, which is the span of time during which people have developed illness after exposure. For COVID-19, the period of quarantine is 14 days from the last date of exposure, because 14 days is the longest incubation period seen for similar coronaviruses. Someone who has been released from COVID-19 quarantine is not considered a risk for spreading the virus to others because they have not developed illness during the incubation period."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#spreadinquarantine && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11756",
+      "previous_sibling": "node_11755"
+    },
+    {
+      "type": "standard",
+      "title": "Person to Person Spread",
+      "output": {
+        "text": {
+          "values": [
+            "The virus that causes COVID-19 is spreading from person-to-person . Someone who is actively sick with COVID-19 can spread the illness to others. That is why CDC recommends that these patients be isolated either in the hospital or at home (depending on how sick they are) until they are better and no longer pose a risk of infecting others. How long someone is actively sick can vary so the decision on when to release someone from isolation is made on a case-by-case basis in consultation with doctors, infection prevention and control experts, and public health officials and involves considering specifics of each situation including disease severity, illness signs and symptoms, and results of laboratory testing for that patient. Current CDC guidance for when it is OK to release someone from isolation is made on a case by case basis and includes meeting all of the following requirements: The patient is free from fever without the use of fever-reducing medications. The patient is no longer showing symptoms, including cough. The patient has tested negative on at least two consecutive respiratory specimens collected at least 24 hours apart. Someone who has been released from isolation is not considered to pose a risk of infection to others."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#PersonToPerson && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11755",
+      "previous_sibling": "node_11754"
+    },
+    {
+      "type": "standard",
+      "title": "Preventive measures by doctors",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The doctors take care of them by using proper protective equipments.\nThe Protective equipment consists of garments placed to protect the health care workers or any other persons to get infected.                              "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "These include PPE's.                                                                                                 Personal Protective Equipment (PPE) is specialized clothing or equipment worn by an employee for protection against infectious materials.\n\nPPE prevents contact with an infectious agent or body fluid that may contain an infectious agent, by creating a barrier between the potential infectious material and the health care worker.                        For more details refer  : https://www.health.state.mn.us/facilities/patientsafety/infectioncontrol/ppe/comp/index.html"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Also they wear a special type of mask called N95 mask. The filtration material on the mask is an electrostatic non-woven polypropylene fiber.                                                                                                                 N: This is a Respirator Rating Letter Class. It stands for “Non-Oil” meaning that if no oil-based particulates are present, then you can use the mask in the work environment.\n\n95: Masks ending in a 95, have a 95 percent efficiency. Masks ending in a 99 have a 99 percent efficiency. Masks ending in 100 are 99.97 percent efficient and that is the same as a HEPA quality filter."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#ProtectiveEquipmentfordoctors",
+      "dialog_node": "node_2_1589616857103",
+      "previous_sibling": "node_6_1589639214933"
+    },
+    {
+      "type": "standard",
+      "title": "Family Preparation",
+      "output": {
+        "text": {
+          "values": [
+            "Create a household plan of action to help protect your health and the health of those you care about in the event of an outbreak of COVID-19 in your community: Talk with the people who need to be included in your plan, and discuss what to do if a COVID-19 outbreak occurs in your community Plan ways to care for those who might be at greater risk for serious complications, particularly older adults and those with severe chronic medical conditions like heart, lung or kidney disease. Make sure they have access to several weeks of medications and supplies in case you need to stay home for prolonged periods of time. Get to know your neighbors and find out if your neighborhood has a website or social media page to stay connected. Create a list of local organizations that you and your household can contact in the event you need access to information, healthcare services, support, and resources. Create an emergency contact list of family, friends, neighbors, carpool drivers, health care providers, teachers, employers, the local public health department, and other community resources."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#PrepareFamily && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11768",
+      "previous_sibling": "node_11767"
+    },
+    {
+      "type": "standard",
+      "title": "Child socialization",
+      "output": {
+        "text": {
+          "values": [
+            "The key to slowing the spread of COVID-19 is to limit social interactions as much as possible. Parents should minimize play dates, and if held, parents should keep the groups small. Advise older children to hang out in a small group and to meet up outside rather than inside. It’s easier to keep and maintain space between others in outdoor settings, like parks. If you have small meetups, consider hanging out with another family or friend who is also taking extra measures to put distance between themselves and others (i.e. social distancing). Make sure children practice everyday preventive behaviors , such as cleaning and then disinfecting frequently touched surfaces. Remember, if children meet outside of school in bigger groups, it can put everyone at risk. This includes spring break and other group travel. Parents should help their older children revise spring break plans that included non-essential travel to crowded areas. Information about COVID-19 in children is somewhat limited, but current data suggest children with COVID-19 may show only mild symptoms. However, they can still pass this virus onto others who may be at higher risk, including older adults and people who have serious chronic medical conditions"
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#ChildrenSocializing && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11785",
+      "previous_sibling": "node_11784"
+    },
+    {
+      "type": "standard",
+      "title": "Risk to Children",
+      "output": {
+        "text": {
+          "values": [
+            "Based on available evidence, children do not appear to be at higher risk for COVID-19 than adults. While some children and infants have been sick with COVID-19, adults make up most of the known cases to date. You can learn more about who is most at risk for health problems if they have COVID-19 infection on CDC’s current Risk Assessment page."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#RiskToChildren && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11764",
+      "previous_sibling": "node_11763"
+    },
+    {
+      "type": "standard",
+      "title": "Community Spread",
+      "output": {
+        "text": {
+          "values": [
+            "Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#CommunitySpread && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11759",
+      "previous_sibling": "node_11758"
+    },
+    {
+      "type": "standard",
+      "title": "Protecting Children from COVID",
+      "output": {
+        "text": {
+          "values": [
+            "You can encourage your child to help stop the spread of COVID-19 by teaching them to do the same things everyone should do to stay healthy. Clean hands often using soap and water or alcohol-based hand sanitizer Avoid people who are sick (coughing and sneezing) Clean and disinfect high-touch surfaces daily in household common areas (e.g. tables, hard-backed chairs, doorknobs, light switches, remotes, handles, desks, toilets, sinks) Launder items including washable plush toys as appropriate in accordance with the manufacturer’s instructions. If possible, launder items using the warmest appropriate water setting for the items and dry items completely. Dirty laundry from an ill person can be washed with other people’s items. You can find additional information on preventing COVID-19 at Prevention for 2019 Novel Coronavirus and at Preventing COVID-19 Spread in Communities . Additional information on how COVID-19 is spread is available by asking How COVID-19 Spreads"
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#ProtectingChildren && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11765",
+      "previous_sibling": "node_11764"
+    },
+    {
+      "type": "frame",
+      "title": "highestcases",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "stats",
+            "number": "@sys-number",
+            "location1": "@mycountry"
+          },
+          "result_variable": "webhook_result_3"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#HighestCases",
+      "dialog_node": "node_6_1589439770572",
+      "previous_sibling": "node_2_1589443683473"
+    },
+    {
+      "type": "standard",
+      "title": "Infected Family Member",
+      "output": {
+        "text": {
+          "values": [
+            "Most people who get COVID-19 will be able to recover at home. CDC has directions for people who are recovering at home and their caregivers, including: Stay home when you are sick, except to get medical care. If you develop emergency warning signs for COVID-19 get medical attention immediately . Emergency warning signs include: Trouble breathing, Persistent pain or pressure in the chest, New confusion or inability to arouse, Bluish lips or face.  This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning. Use a separate room and bathroom for sick household members (if possible). Clean hands regularly by hand washing with soap and water or using an alcohol-based hand sanitizer with at least 60% alcohol. Provide your sick household member with clean disposable face masks to wear at home, if available, to help prevent spreading COVID-19 to others. Clean the sick room and bathroom , as needed, to avoid unnecessary contact with the sick person. Avoid sharing personal items like utensils, food, and drinks."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#InfectedFamilyMember && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11770",
+      "previous_sibling": "node_11769"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "text": {
+          "values": [
+            "Hello, I’m the COVID Crisis Communication Bot ready to answer your questions about COVID-19. How can I help you?"
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "#greeting && intents[0].confidence > 0.95",
+      "dialog_node": "node_11748",
+      "previous_sibling": "node_11788"
+    },
+    {
+      "type": "standard",
+      "title": "Effectiveness of lockdown",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Observing the lockdown in india-\nObservers stated that the lockdown had slowed the growth rate of the pandemic by 6 April to a rate of doubling every six days, and by 18 April, to a rate of doubling every eight days.These were the initial data"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "But according to data compiled by Johns Hopkins University. The surge underscores the limited impact of the countrywide lockdown imposed on March 25 to curb the pathogen. Nearly two months into the world’s most expansive stay-at-home orders, India has not seen its virus curve flattening like Italy or Spain where new cases had begun trending downward sooner. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "So there are mixed reviews regarding lockdown effectiveness in india."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Effectivenenessoflockdown",
+      "dialog_node": "node_3_1589613439655",
+      "previous_sibling": "node_2_1589616857103"
+    },
+    {
+      "type": "standard",
+      "title": "Can it spread via food?",
+      "output": {
+        "text": {
+          "values": [
+            "Coronaviruses are generally thought to be spread from person-to-person through respiratory droplets. Currently there is no evidence to support transmission of COVID-19 associated with food. Before preparing or eating food it is important to always wash your hands with soap and water for 20 seconds for general food safety. Throughout the day wash your hands after blowing your nose, coughing or sneezing, or going to the bathroom. In general, because of poor survivability of these coronaviruses on surfaces, there is likely very low risk of spread from food products or packaging that are shipped over a period of days or weeks at ambient, refrigerated, or frozen temperatures.  "
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#spreadviafood && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11757",
+      "previous_sibling": "node_11756"
+    },
+    {
+      "type": "standard",
+      "title": "your name",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I am not given any specific name. But You may call me Covid crisis bot. Ask me about COVID-19. How may I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "I have been developed by a group of crazy peoples sitting in their home, bored due to the lockdown.                                                                                        "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://avatars3.githubusercontent.com/u/65216251?s=200&v=4",
+            "response_type": "image"
+          }
+        ]
+      },
+      "conditions": "#yourname",
+      "dialog_node": "node_8_1589388783934",
+      "previous_sibling": "node_6_1589439770572"
+    },
+    {
+      "type": "standard",
+      "title": "Advice on Home Schooling",
+      "output": {
+        "text": {
+          "values": [
+            "Stay in touch with your child’s school. Many schools are adapting in-person lessons to online or virtual learning. Review assignments from the school, and help your child establish a reasonable pace for completing the work. You may need to assist your child with turning on devices, reading instructions, and typing answers. Communicate challenges to your school. If you face technology or connectivity issues, or if your child is having a hard time completing assignments, let the school know. Create a schedule and routine for learning at home, but remain flexible. Have consistent bedtimes and get up at the same time, Monday through Friday. Structure the day for learning, free time, healthy meals and snacks, and physical activity. Allow flexibility in the schedule—it’s okay to adapt based on your day. Consider the needs and adjustment required for your child’s age group. The transition to being at home will be different for preschoolers, K-5, middle school students, and high school students. Talk to your child about expectations and how they are adjusting to being at home versus at school. Consider ways your child can stay connected with their friends without spending time in person. Look for ways to make learning fun. Have hands-on activities, like puzzles, painting, drawing, and making things. Independent play can also be used in place of structured learning. Encourage children to build a fort from sheets or practice counting by stacking blocks. Practice handwriting and grammar by writing letters to family members. This is a great way to connect and limit face-to-face contact. Start a journal with your child to document this time and discuss the shared experience. Use audio books or see if your local library is hosting virtual or live-streamed reading events."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#Schoolfromhome && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11786",
+      "previous_sibling": "node_11785"
+    },
+    {
+      "type": "standard",
+      "title": "How does it Spread",
+      "output": {
+        "video": {},
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "This virus was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person. It’s important to note that person-to-person spread can happen on a continuum. Some viruses are highly contagious (like measles), while other viruses are less so. The virus that causes COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in some affected geographic areas.                          The virus is so faster spreading that i can spread from just coming in contact with an infected surface"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Although no solid proof of the virus being being airborne have  been surfaced. Further studies are going on the nature and mode of transmission of the virus.                                                                                           For safety purpose people should maintain atleast 1m distance as the virus can travel upto this distance in air."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ],
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#HowDoesItSpread && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11753",
+      "previous_sibling": "node_11752"
+    },
+    {
+      "type": "standard",
+      "title": "Covid warriors ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"Hanumanism\" epitomises selfless service beyond the call of duty. And that is the quality that has been displayed by the \"corona warriors\" in India, during the country’s battle against SARS-CoV-2. One of the appellations of Hanuman is sankata mochan (one who relieves you from trouble). That is the way most of us have appreciated all those who have come to our aid during the havoc caused by COVID-19.                                                                           India have a large network of Asha workers, medical sanitary workers working in government hospitals, paramedics, nurses, doctors  , Police , ngo's and the people who are providing essentials to needy. They are called the corona warriors of India and we salute them."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "for more information click <a  target=\"_blank\" href=\"https://covidwarriors.gov.in/default.aspx\">here</a> "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://ichef.bbci.co.uk/news/410/cpsprodpb/2906/production/_111420501_gettyimages-1207995797.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "conditions": "#CoronaWarriors",
+      "dialog_node": "node_10_1589708553440",
+      "previous_sibling": "node_6_1589793868428"
+    },
+    {
+      "type": "standard",
+      "title": "Should I wear face masks?",
+      "output": {
+        "text": {
+          "values": [
+            "CDC does not recommend that people who are well wear a facemask to protect themselves from respiratory illnesses, including COVID-19. You should only wear a mask if a healthcare professional recommends it. A facemask should be used by people who have COVID-19 and are showing symptoms. This is to protect others from the risk of getting infected. The use of facemasks also is crucial for health workers and other people who are taking care of someone infected with COVID-19 in close settings (at home or in a health care facility).We urge you to cover your face with whatever mask you have."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#Wearingfacemasks && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11762",
+      "previous_sibling": "node_11761"
+    },
+    {
+      "type": "standard",
+      "title": "jokes",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "you know what, I just noticed:\nFirst time in history, we can save the human race by lying in front of the tv and doing nothing. \n\nso let's not mess this up."
+              },
+              {
+                "text": "I have a prediction for you to look forward to:\nthere will be a minor baby boom in 9 months, and then one day in 2033, we all witness the rise of THE QUARANTEENS."
+              },
+              {
+                "text": "<a><img src=\"https://static.boredpanda.com/blog/wp-content/uploads/2020/03/14-5e6f82296a4ff__700.jpg\" alt=\"when you are working in the bank and t2 people walk in with masks but they ar just here to rob the place. \" style=\"width: 200px; height: 200px \"/></a>"
+              },
+              {
+                "text": "\n<a><img src=\"https://static.boredpanda.com/blog/wp-content/uploads/2020/03/Untitled-1-5e6f4853b20ee__700.gif\" alt=\"not all sports are cancelled  \" style=\"width: 200px; height: 200px \"/></a>"
+              },
+              {
+                "text": "\n<a><img src=\"https://static.boredpanda.com/blog/wp-content/uploads/2020/03/1-5e6f25ded66e6__700.jpg\" alt=\"olympic games symbol following social distancing  \" style=\"width: 200px; height: 200px \"/></a>"
+              },
+              {
+                "text": "\n<a><img src=\"https://static.boredpanda.com/blog/wp-content/uploads/2020/03/5e6f5937cfa9a_WJTmI7i__700.jpg\" alt=\"when you normally spend all your time at home but then the government says you have to -- well now I am not doing it.\" style=\"width: 200px; height: 200px \"/></a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#jokes",
+      "dialog_node": "node_6_1589871437212",
+      "previous_sibling": "node_2_1589871472622"
+    },
+    {
+      "type": "standard",
+      "title": "Preparing and Calming Children",
+      "output": {
+        "text": {
+          "values": [
+            "Outbreaks can be stressful for adults and children. Talk with your children about the outbreak, try to stay calm, and reassure them that they are safe. If appropriate, explain to them that most illness from COVID-19 seems to be mild. Children respond differently to stressful situations than adults."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#PreparingChildren && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11773",
+      "previous_sibling": "node_11772"
+    },
+    {
+      "type": "standard",
+      "title": "Animal Contact",
+      "output": {
+        "text": {
+          "values": [
+            "You should restrict contact with pets and other animals while you are sick with COVID-19, just like you would around other people. Although there have not been reports of pets or other animals becoming sick with COVID-19, it is still recommended that people sick with COVID-19 limit contact with animals until more information is known about the virus. When possible, have another member of your household care for your animals while you are sick. If you are sick with COVID-19, avoid contact with your pet, including petting, snuggling, being kissed or licked, and sharing food. If you must care for your pet or be around animals while you are sick, wash your hands before and after you interact with pets and wear a face mask."
+          ],
+          "selection_policy": "sequential"
+        },
+        "video": {},
+        "disclaimers": [
+          "SOURCE: https://www.cdc.gov/coronavirus/2019-ncov/faq.html"
+        ]
+      },
+      "context": {},
+      "conditions": "(#AnimalContact && intents[0].confidence > $low_confidence)",
+      "dialog_node": "node_11784",
+      "previous_sibling": "node_11783"
+    },
+    {
+      "type": "frame",
+      "title": "contact",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "type": "resources",
+            "state": "@sys-location",
+            "resource": "@Resourcetype"
+          },
+          "result_variable": "webhook_result_4"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#resources",
+      "dialog_node": "node_8_1590232907120"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "are you a covid -19 patient"
+    },
+    {
+      "text": "What are the containment zones"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "enabled": false,
+      "randomize": true,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above."
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": true,
+  "name": "CDC COVID FAQ",
+  "language": "en",
+  "description": ""
+}
