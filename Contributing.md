@@ -59,6 +59,8 @@ $ pip install -r requirements-dev.txt
 
 ```
 
+* Create a .env file to store all your environment variables for the project.
+
 ## Running the Django Project
 
 ```bash
