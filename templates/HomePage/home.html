@@ -14,25 +14,26 @@
 		<div class="front">
 			<div class="logo">
 				<img src="{%  static 'img/logo.jpg' %}" alt="">
-			   
-				<button style="margin-right: 30px;"><a href="/transit-pass/apply">Apply</a></button>
-				
-				<button style="margin-right: 60px;"><a href="/transit-pass/check-application-status">Check Application Status</a></button>
-				<button style="margin-right: 60px;"><a href="/transit-pass/check-pass-validity">Verify Transit Pass Status</a></button>
 
-				{% if user.is_authenticated %}
-					<button style="margin-right: 60px;"><a href="/logout">Log Out</a></button>
-				{% else %}
-					<button style="margin-right: 60px;"><a href="/login">Log in</a></button>
-				{% endif %}
+				<div class="buttongroup">
+					<button style="margin-right: 30px;"><a href="/transit-pass/apply">Apply</a></button>
+					<button style="margin-right: 60px;"><a href="/transit-pass/check-application-status">Check Application Status</a></button>
+					<button style="margin-right: 60px;"><a href="/transit-pass/check-pass-validity">Verify Transit Pass Status</a></button>
 
-				{% if user.is_authenticated %}
-                    {% if user.is_superuser %}
-						<button style="margin-right: 60px;"><a href="/admin">My Account</a></button>
-                    {% else %}
-						<button style="margin-right: 60px;"><a href="/transit-pass/view-application-list">My Account</a></button>
-                    {% endif %}
-				{% endif %}
+					{% if user.is_authenticated %}
+						<button style="margin-right: 60px;"><a href="/logout">Log Out</a></button>
+					{% else %}
+						<button style="margin-right: 60px;"><a href="/login">Log in</a></button>
+					{% endif %}
+
+					{% if user.is_authenticated %}
+						{% if user.is_superuser %}
+							<button style="margin-right: 60px;"><a href="/admin">My Account</a></button>
+						{% else %}
+							<button style="margin-right: 60px;"><a href="/transit-pass/view-application-list">My Account</a></button>
+						{% endif %}
+					{% endif %}
+				</div>
 			</div>
 
 			 <div class="content">

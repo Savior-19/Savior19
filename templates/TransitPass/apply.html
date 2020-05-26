@@ -4,8 +4,8 @@
 		<link rel="stylesheet" href="{% static 'css/TransitPass/apply.css' %}">
 	</head>
 	<body>
-		<img src="{% static 'img/logo.jpg' %}">
-		<h1 style="text-align: center;">Application form</h1>
+		<a href="/"><img src="{% static 'img/logo.jpg' %}"></a>
+		<h1 >Application form</h1>
 		<br>
 		<br>
 		<br>
@@ -14,6 +14,7 @@
 		<form method="post" enctype="multipart/form-data">
 			{% csrf_token %}
 			<div class="fom">
+				<br><br>
 				<h4>Full Name:-</h4>
 				<input type="text" name="full_name" required placeholder="Full Name" id="name">
 				<br>
@@ -115,9 +116,10 @@
 
 				<input required type="text" name="vehicle_no">
 				<br>
-				<br>
+				<br><br>
 	
 				<button type="submit">Submit</button>
+				<br><br>
 			</div>
 		</form>
 		<button style="margin-left: 90px;"><a href="/">Back</a></button>

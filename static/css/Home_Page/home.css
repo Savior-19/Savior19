@@ -43,7 +43,7 @@ button{
     height: 40px;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    margin-top: 80px;
+    margin-top: 40px;
     background-color: rgb(255, 38, 0);
     display: inline;
 }
@@ -112,4 +112,10 @@ button {
     height: fit-content;
     width: fit-content;
     padding: 10px;
+}
+
+.buttongroup {
+    margin-left: 22em;
+    margin-top: -8em;
+    padding-bottom: 8em;
 }
