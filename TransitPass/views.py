@@ -112,7 +112,7 @@ def DisplayIndividualApplication(request, appln_id) :
 					Pass Expiry date : {pass_object.expiry_date} \n \
 					Thanking You \n \
 					Savior 19"
-				send_mail(mail_subject, mail_body, settings.EMAIL_HOST_USER, [str(application_object.email)], fail_silently=False)
+				send_mail(mail_subject, mail_body, settings.EMAIL_HOST_USER, [str(application_object.email)], fail_silently=settings.DEPLOY)
 				return redirect(DisplayApplicationList)
 			elif application_object.status == 'CL' :
 				# If the application needs more clarifications
@@ -124,7 +124,7 @@ def DisplayIndividualApplication(request, appln_id) :
 					{comments} \n \
 					Thanking You \n \
 					Savior 19"
-				send_mail(mail_subject, mail_body, settings.EMAIL_HOST_USER, [str(application_object.email)], fail_silently=False)
+				send_mail(mail_subject, mail_body, settings.EMAIL_HOST_USER, [str(application_object.email)], fail_silently=settings.DEPLOY)
 				print('sent mail')
 				return redirect(DisplayApplicationList)
 			else :
@@ -137,7 +137,7 @@ def DisplayIndividualApplication(request, appln_id) :
 					{comments} \n \
 					Thanking You \n \
 					Savior 19"
-				send_mail(mail_subject, mail_body, settings.EMAIL_HOST_USER, [str(application_object.email)], fail_silently=False)
+				send_mail(mail_subject, mail_body, settings.EMAIL_HOST_USER, [str(application_object.email)], fail_silently=settings.DEPLOY)
 				return redirect(DisplayApplicationList)
 		else :
 			raise PermissionDenied()
