@@ -103,7 +103,7 @@ class TransitPassApplication(models.Model) :
 
 
 class TransitPass(models.Model) :
-    application = models.ForeignKey(TransitPassApplication, on_delete=models.SET_NULL, related_name='transit_pass_object', null=True)
+    application = models.ForeignKey(TransitPassApplication, on_delete=models.CASCADE, related_name='transit_pass_object', null=True)
     authorizer = models.ForeignKey('users.CustomUser', on_delete=models.CASCADE, limit_choices_to = models.Q(role='DisOff') | models.Q(role='StOff'))
     issue_date = models.DateField(verbose_name='Date Of Issue', auto_now=True)
     expiry_date = models.DateField(verbose_name='Valid Upto')
