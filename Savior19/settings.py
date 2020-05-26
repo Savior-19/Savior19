@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,11 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # Change this to True to make all the necessary changes to all the settings and to deploy.
-DEPLOY = True
+DEPLOY = config('DEPLOY', cast=bool)
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'mi)vammyq)bct_3ga2#pqtaa7rx($=6$=5p7yd1)##mg26#rjs'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if DEPLOY == True :
@@ -98,11 +99,11 @@ if DEPLOY == True :
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'd7gfcaac9dvl0o',
-            'USER': 'zvsfthazachgxz',
-            'PASSWORD': '71c6f03832b27e64944471a1cfc255f3b37c6053452f0b7143cd4a4bf693d2cf',
-            'HOST': 'ec2-54-81-37-115.compute-1.amazonaws.com',
-            'PORT': '5432',
+            'NAME': config('DB_NAME'),
+            'USER': config('DB_USER'),
+            'PASSWORD': config('DB_PASSWORD'),
+            'HOST': config('DB_HOST'),
+            'PORT': config('DB_PORT'),
         }
     }
 else :
