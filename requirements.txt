@@ -4,3 +4,4 @@ python-dateutil
 gunicorn
 django-heroku
 whitenoise
+python-decouple
