@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser, UserManager
 from TransitPass.models import State, District
 
-
 class CustomUserManager(UserManager) :
     pass
 

@@ -1,0 +1,48 @@
+<html>
+	<head>
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/registration/login.css' %}" type="text/css">
+	</head>
+
+	<body>
+		{% if user.is_authenticated %}
+			<h1>You are already logged in. Log-out to login into another user.</h1>
+		{% else %}
+			<div class="scroll">
+				<form method="POST" style="margin: 0px;">
+					{% csrf_token %}
+					<div class="login">
+						<h1>LOGIN</h1>
+						<div class="textbox">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<input type="text" placeholder="USER NAME" name="username" value="">
+						</div>
+						<div class="textbox">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+							<input type="password" placeholder="PASSWORD" name="password" value="">
+						</div>
+						<div class="button">
+							<button type="submit" class="button">Login</button>
+						</div>
+						<div class="button">
+							<button class="button"><a href="/">Back</a></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		{% endif %}
+		<script>
+			window.watsonAssistantChatOptions = {
+				integrationID: "4c649de9-42f2-49fd-8a77-67152d788544", // The ID of this integration.
+				region: "eu-gb", // The region your integration is hosted in.
+				serviceInstanceID: "d7840b8d-807d-4606-9e56-15cb66afe6ba", // The ID of your service instance.
+				onLoad: function(instance) { instance.render(); }
+			  };
+			setTimeout(function(){
+			  const t=document.createElement('script');
+			  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+			  document.head.appendChild(t);
+			});
+		  </script>
+	</body>
+</html>

@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 from django.urls import path, include
+from django.contrib.auth import views as auth_views
 from . import views
 
 urlpatterns = [
@@ -24,7 +25,11 @@ urlpatterns = [
 
     path('', views.Home_Page),
 
-    path('transitpass/', include('TransitPass.urls'))
+     path('login/', auth_views.LoginView.as_view(), name='login'),
+
+    path('logout/', auth_views.LogoutView.as_view(), {'template_name': 'HomePage/home.html'}, name='logout'),
+
+    path('transit-pass/', include('TransitPass.urls'))
 ]
 
 

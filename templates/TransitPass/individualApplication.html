@@ -1,0 +1,152 @@
+{% extends 'TransitPass/base.html' %}
+{% load static %}
+
+{% block header %}
+    <link rel="stylesheet" href="{% static 'css/TransitPass/individualApplication.css' %}" type="text/css">
+    <script>
+        function changedval()
+        {
+            val = document.getElementById('status').value;
+            if (val == 'R' || val == 'CL')
+                document.getElementById('commentsdiv').style.visibility = 'visible'
+            else
+                document.getElementById('commentsdiv').style.visibility = 'hidden'
+            if (val == 'AC')
+                document.getElementById('expirydiv').style.visibility = 'visible'
+            else
+                document.getElementById('expirydiv').style.visibility = 'hidden'
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+    <h1>Application</h1>
+
+    <table>
+        <tr>
+            <th>Full Name</th>
+            <td>{{ application.full_name }}</td>
+        </tr>
+        <tr>
+            <th>Mobile Number</th>
+            <td>{{ application.mobile }}</td>
+        </tr>
+        <tr>
+            <th>Email Address</th>
+            <td>{{ application.email }}</td>
+        </tr>
+        <tr>
+            <th>Permanent Address</th>
+            <td>{{ application.address }}</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>{{ application.age }}</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>{{ application.gender }}</td>
+        </tr>
+        <tr>
+            <th>Applicant Type</th>
+            <td>
+                {% if application.applicant_type == 'Pvt' %}
+                    Private Corporation
+                {% else %}
+                    {% if application.applicant_type == 'Govt' %}
+                        Government Official/ Organization
+                    {% else %}
+                        Public Individual
+                    {% endif %}
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <th>Aadhaar Number</th>
+            <td>{{ application.aadhaar_number }}</td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td>{{ application.state.name }}</td>
+        </tr>
+        <tr>
+            <th>District</th>
+            <td>{{ application.district.name }}</td>
+        </tr>
+        <tr>
+            <th>Purpose</th>
+            <td>{{ application.purpose }}</td>
+        </tr>
+        <tr>
+            <th>Source</th>
+            <td>{{ application.source }}</td>
+        </tr>
+        <tr>
+            <th>Destination</th>
+            <td>{{ application.destination }}</td>
+        </tr>
+        <tr>
+            <th>Date Of Journey</th>
+            <td>{{ application.doj }}</td>
+        </tr>
+        <tr>
+            <th>Vehicle Number</th>
+            <td>{{ application.vehicle_no }}</td>
+        </tr>
+        <tr>
+            <th>Vehicle Type</th>
+            <td>
+                {% if application.vehicle_type == 'T' %}
+                    Two Wheeler
+                {% else %}
+                    Four Wheeler
+                {% endif %}
+            </td>
+        </tr>
+        <tr>
+            <th>Current Application Status</th>
+            <td>
+                {% if application.status == 'A' %}
+                    Applied
+                {% else %}
+                    {% if application.status == 'AC' %}
+                        Accepted
+                    {% else %}
+                        {% if application.status == 'CL' %}
+                            Clarifications Required
+                        {% else %}
+                            Rejected
+                        {% endif %}
+                    {% endif %}
+                {% endif %}
+            </td>
+        </tr>
+    </table>
+
+    <div id="outer">
+        {% if application.status == 'A' or application.status == 'CL' %}
+            <form method="post">
+                {% csrf_token %}
+                <h3>Your Decision : </h3>
+                <br>
+                <select name="status" id="status" onchange="changedval()">
+                    <option value="AC">Accept</option>
+                    <option value="CL">Request Clarification</option>
+                    <option value="R">Reject</option>
+                </select>
+                <br><br>
+                <div id="commentsdiv" style="visibility: hidden;">
+                    <h5>Enter your comments : </h5>
+                    <br>
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+                <div id="expirydiv" style="visibility: visible;">
+                    <h5>Enter a expiry date :</h5>
+                    <input type="date" name="expiry">
+                </div>
+                <br>
+                <button class="mybutton" type="submit">Submit</button>
+            </form>
+        {% endif %}
+    </div>
+{% endblock %}
