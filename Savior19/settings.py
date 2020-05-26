@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # Change this to True to make all the necessary changes to all the settings and to deploy.
-DEPLOY = False
+DEPLOY = True
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -33,7 +33,7 @@ else :
     DEBUG = True
 
 # The wep address should be added here.
-ALLOWED_HOSTS = ['savior19-staging.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['savior19.herokuapp.com', '127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -98,10 +98,10 @@ if DEPLOY == True :
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'd5lpa4b46iu9rt',
-            'USER': 'xutqhpmesdoyhk',
-            'PASSWORD': '35174c50d52feea15363f1c57a027f0dc8c6f25051c3bff05fc938f782953c5f',
-            'HOST': 'ec2-34-230-149-169.compute-1.amazonaws.com',
+            'NAME': 'd7gfcaac9dvl0o',
+            'USER': 'zvsfthazachgxz',
+            'PASSWORD': '71c6f03832b27e64944471a1cfc255f3b37c6053452f0b7143cd4a4bf693d2cf',
+            'HOST': 'ec2-54-81-37-115.compute-1.amazonaws.com',
             'PORT': '5432',
         }
     }
