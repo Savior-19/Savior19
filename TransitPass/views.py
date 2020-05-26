@@ -4,7 +4,9 @@ from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
 from django.db import models
+from django.core.mail import send_mail
 import datetime
+import Savior19.settings as settings
 
 
 # ---------------------------------------------------------- Customer Pages -----------------------------------------------------------
@@ -102,18 +104,40 @@ def DisplayIndividualApplication(request, appln_id) :
 				)
 				# Send a application accepted successfuly email to the user.
 				print('An email has been send to the applicant with the details of the pass.')
-
+				mail_subject = 'Savior-19 -  Your Transit Pass Application has been accepted'
+				mail_body = f"Dear {application_object.full_name}, \n \
+					Your application for transit pass with application number {application_object.id} has been approved successfully. \n \
+					Kindly note down the following details reguarding your pass. \n \
+					Pass ID : {pass_object.id} \n \
+					Pass Expiry date : {pass_object.expiry_date} \n \
+					Thanking You \n \
+					Savior 19"
+				send_mail(mail_subject, mail_body, settings.EMAIL_HOST_USER, [str(application_object.email)], fail_silently=False)
 				return redirect(DisplayApplicationList)
 			elif application_object.status == 'CL' :
 				# If the application needs more clarifications
 				comments = request.POST['comments']
-
+				mail_subject = 'Savior-19 -  Your Transit Pass Application needs more details'
+				mail_body = f"Dear {application_object.full_name}, \n  \
+					Your application for transit pass with application number {application_object.id} has been put on hold. \n \
+					Please note down the additional details that is required to process your application. \n \
+					{comments} \n \
+					Thanking You \n \
+					Savior 19"
+				send_mail(mail_subject, mail_body, settings.EMAIL_HOST_USER, [str(application_object.email)], fail_silently=False)
+				print('sent mail')
 				return redirect(DisplayApplicationList)
 			else :
 				# If the application has been rejected
 				# Send a mail stating the rejection issue
 				comments = request.POST['comments']
-
+				mail_subject = 'Savior-19 -  Your Transit Pass Application has been Rejected'
+				mail_body = f"Dear {application_object.full_name}, \n \
+					Your application for transit pass with application number {application_object.id} has been rejected due to the following reasons. \n \
+					{comments} \n \
+					Thanking You \n \
+					Savior 19"
+				send_mail(mail_subject, mail_body, settings.EMAIL_HOST_USER, [str(application_object.email)], fail_silently=False)
 				return redirect(DisplayApplicationList)
 		else :
 			raise PermissionDenied()

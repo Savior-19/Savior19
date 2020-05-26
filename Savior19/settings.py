@@ -27,11 +27,13 @@ DEPLOY = config('DEPLOY', cast=bool)
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 if DEPLOY == True :
     DEBUG = False
 else :
     DEBUG = True
+
 
 # The wep address should be added here.
 ALLOWED_HOSTS = ['savior19.herokuapp.com', '127.0.0.1', 'localhost']
@@ -162,8 +164,23 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
+
 # Media files 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
+
+
+# SMTP Email Configaration
+
+EMAIL_HOST = config('EMAIL_HOST')
+
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+
+EMAIL_USE_TLS = config('EMAIL_USE_TLS', cast=bool)
+
