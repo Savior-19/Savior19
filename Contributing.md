@@ -60,6 +60,30 @@ $ pip install -r requirements-dev.txt
 ```
 
 * Create a .env file to store all your environment variables for the project.
+The file should contain values for all the below specfied variables. 
+
+```bash
+
+SECRET_KEY = <Your Secret Key>
+
+# To specify if the project needs to be deployed or not.
+DEPLOY = False/True
+
+# To specify details of your database provider for deployment.
+DB_NAME = <Your Database Name>
+DB_USER = <Your Database Username>
+DB_PASSWORD = <Your Database Password>
+DB_HOST = <Your Database HOST address>
+DB_PORT = <Your Database PORT number>
+
+# To specify thedetails of your email service provider.
+EMAIL_HOST = <Your Email HOST Address>
+EMAIL_PORT = <Your Email Providers PORT number>
+EMAIL_HOST_USER = <Your Email providers username>
+EMAIL_HOST_PASSWORD = <Your Email providers password>
+EMAIL_USE_TLS = <If your Email service provider supports TLS or not>
+
+```
 
 ## Running the Django Project
 
